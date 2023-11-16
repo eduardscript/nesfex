@@ -1,5 +1,5 @@
-﻿using ConsoleApp1.Services;
-using ConsoleApp1.Shared.Domain;
+﻿using ConsoleApp1.Mappers.Entities;
+using ConsoleApp1.Services;
 
 public class Program
 {
@@ -17,7 +17,7 @@ public class Program
     public static IEnumerable<Entities.Category> MapRawDataToDomainEntities(RawData data)
     {
         // Map categories
-        var filteredRawCategories = data.Categories.ToDomainCategory(data).ToList();
+        var filteredRawCategories = data.Categories.ToDomainCategory().ToList();
         var categoryTypes = filteredRawCategories.GroupBy(x => x.Type).ToList();
 
         var mappedCategories = new List<Entities.Category>();
@@ -41,7 +41,7 @@ public class Program
                         categoryTypes,
                         CategoryType.Flavor,
                         capsuleInCateogry.Flavors);
-                    
+
                     // Get the capsule labels 
                     var labelsNames = GetNamesByCategoryType(
                         categoryTypes,
@@ -52,8 +52,9 @@ public class Program
                     var cupSizesNames = GetNamesByCategoryType(
                         categoryTypes,
                         CategoryType.CupSize,
-                        capsuleInCateogry.CupSizes);
-                    
+                        capsuleInCateogry.CupSizes
+                        ).ToList();
+
                     // For ristretto capsules, if there are no cup sizes, add ristretto
                     // because nespresso json does not have cup sizes for ristretto capsules
                     if (!cupSizesNames.Any() && capsuleInCateogry.Ranges.Any(x => x.Contains("ristretto")))
@@ -108,9 +109,9 @@ public class Program
 
         return mappedCategories.ToList();
     }
-    
+
     private static IEnumerable<string> GetNamesByCategoryType(
-        IEnumerable<IGrouping<CategoryType, FilteredRawCategory>> categoryTypes, 
+        IEnumerable<IGrouping<CategoryType, FilteredRawCategory>> categoryTypes,
         CategoryType categoryType,
         IEnumerable<string> categoryTypeNames)
     {

@@ -1,13 +1,13 @@
-﻿public static class CategoryMapper
+﻿namespace ConsoleApp1.Mappers.Entities;
+
+public static class FilteredRawCategoryMapper
 {
-    public static IEnumerable<FilteredRawCategory> ToDomainCategory(this IEnumerable<ExternalNespressoCategory> category, RawData rawData)
+    public static IEnumerable<FilteredRawCategory> ToDomainCategory(this IEnumerable<ExternalNespressoCategory> category)
     {
-        return category.Select(x => x.ToDomainCategory(rawData));
+        return category.Select(x => x.ToDomainCategory());
     }
 
-    public static FilteredRawCategory ToDomainCategory(
-        this ExternalNespressoCategory category,
-        RawData rawData)
+    private static FilteredRawCategory ToDomainCategory(this ExternalNespressoCategory category)
     {
         return new FilteredRawCategory
         {
@@ -19,7 +19,7 @@
         };
     }
 
-    public static CategoryType ToCategoryType(this IEnumerable<string> superCategories, string categoryId)
+    private static CategoryType ToCategoryType(this IEnumerable<string> superCategories, string categoryId)
     {
         var category = superCategories.First();
 
