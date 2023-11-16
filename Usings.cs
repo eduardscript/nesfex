@@ -1,0 +1,1 @@
+﻿global using Entities = ConsoleApp1.Domain;
