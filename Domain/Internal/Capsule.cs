@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Domain;
+﻿namespace ConsoleApp1.Domain.Internal;
 
 public record Category(
     string Name,

@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Mappers.Entities;
+﻿namespace ConsoleApp1.Domain.External;
 
 public static class FilteredRawCategoryMapper
 {
@@ -23,26 +23,13 @@ public static class FilteredRawCategoryMapper
     {
         var category = superCategories.First();
 
-        if (categoryId.Contains("capsule-range-label"))
+        return category switch
         {
-            return CategoryType.Label;
-        }
-        
-        if (category.Contains("capsule-cupSize"))
-        {
-            return CategoryType.CupSize;
-        }
-
-        if (category.Contains("capsule-range"))
-        {
-            return CategoryType.Capsules;
-        }
-
-        if (category.Contains("capsule-aromatic"))
-        {
-            return CategoryType.Flavor;
-        }
-      
-        throw new Exception("Unknown category type");
+            _ when categoryId.Contains("capsule-range-label") => CategoryType.Label,
+            _ when category.Contains("capsule-cupSize") => CategoryType.CupSize,
+            _ when category.Contains("capsule-range") => CategoryType.Capsules,
+            _ when category.Contains("capsule-aromatic") => CategoryType.Flavor,
+            _ => throw new Exception("Unknown category type")
+        };
     }
 }

@@ -1,4 +1,6 @@
-﻿public class FilteredRawCategory
+﻿namespace ConsoleApp1.Domain.External;
+
+public class FilteredRawCategory
 {
     public string Id { get; set; } = default!;
     

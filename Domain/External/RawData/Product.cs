@@ -1,4 +1,6 @@
-﻿public class ExternalNespressoCategory
+﻿namespace ConsoleApp1.Domain.External;
+
+public class ExternalNespressoCategory
 {
     public string Id { get; set; } = default!;
     public string Name { get; set; } = default!;

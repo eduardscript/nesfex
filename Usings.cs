@@ -1,1 +1,2 @@
-﻿global using Entities = ConsoleApp1.Domain;
+﻿global using InternalEntities = ConsoleApp1.Domain.Internal;
+global using ConsoleApp1.Domain.External;

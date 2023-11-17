@@ -1,4 +1,6 @@
-﻿public class RawData
+﻿namespace ConsoleApp1.Domain.External;
+
+public class RawData
 {
     public List<ExternalNespressoCategory> Categories { get; set; }
     public List<Technology> EnabledTechnologies { get; set; }
