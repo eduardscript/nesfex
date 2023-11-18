@@ -2,23 +2,25 @@ name: 🛰️ Backend
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "master" ]
 
 jobs:
-  backend_nesprex_mapper:
+  build:
     runs-on: ubuntu-latest
     steps:
-    - working-directory: ./backend/nesprex-mapper
     - uses: actions/checkout@v3
     - name: 🛠️ Setup .NET
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version: 6.0.x
     - name: 📦 Restore dependencies
+      working-directory: './backend/nesprex-mapper'
       run: dotnet restore
     - name: 🏗️ Build
+      working-directory: './backend/nesprex-mapper'
       run: dotnet build --no-restore
     - name: 🧪 Test
+      working-directory: './backend/nesprex-mapper'
       run: dotnet test --no-build --verbosity normal
