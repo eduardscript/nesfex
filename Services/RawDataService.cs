@@ -1,14 +1,13 @@
 ﻿using System.Text.Json;
+using Domain.Utilities.Comparers;
+using ExternalEntities = Domain.Entities.External;
 
-namespace ConsoleApp1.Services;
+namespace Domain.Services;
 
 public class RawDataService
 {
-    public static async Task<RawData> GetRawData(string vertuoJsonPath, string originalJsonPath)
+    public static async Task<RawData> GetRawData(string vertuoJsonString, string originalJsonString)
     {
-        var vertuoJsonString = await File.ReadAllTextAsync(vertuoJsonPath);
-        var originalJsonString = await File.ReadAllTextAsync(originalJsonPath);
-
         var serializerOptions = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
@@ -19,33 +18,10 @@ public class RawDataService
         
         var mergedData = new RawData(
             data1.Categories.Concat(data2.Categories).Distinct(new EntityEqualityComparer<ExternalNespressoCategory>(x => x.Id)).ToList(),
-            data1.EnabledTechnologies.Concat(data2.EnabledTechnologies).Distinct(new EntityEqualityComparer<Technology>(x => x.Id!)).ToList(),
-            data1.Products.Concat(data2.Products).Distinct(new EntityEqualityComparer<Product>(x => x.Id)).ToList()
-        );
+            data1.EnabledTechnologies.Concat(data2.EnabledTechnologies).Distinct(new EntityEqualityComparer<ExternalEntities.Technology>(x => x.Id!)).ToList(),
+            data1.Products.Concat(data2.Products).Distinct(new EntityEqualityComparer<Product>(x => x.Id)).ToList());
 
         return mergedData;
     }
 }
 
-class EntityEqualityComparer<T> : IEqualityComparer<T>
-{
-    private readonly Func<T, string> _keySelector;
-
-    public EntityEqualityComparer(Func<T, string> keySelector)
-    {
-        _keySelector = keySelector;
-    }
-
-    public bool Equals(T? x, T? y)
-    {
-        if (x == null || y == null)
-            return false;
-
-        return EqualityComparer<string>.Default.Equals(_keySelector(x), _keySelector(y));
-    }
-
-    public int GetHashCode(T obj)
-    {
-        return obj == null ? 0 : _keySelector(obj).GetHashCode();
-    }
-}

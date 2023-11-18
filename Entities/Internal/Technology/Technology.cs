@@ -1,20 +1,22 @@
-﻿namespace ConsoleApp1.Domain.Internal;
+﻿namespace Domain.Entities.Internal;
+
+public record Technology(
+    string Name,
+    string ImageUrl,
+    IEnumerable<Category> Categories);
 
 public record Category(
     string Name,
     string Description,
-    Technology Technology,
+    string ImageUrl,
     IEnumerable<Capsule> Capsules);
-
-public record Technology(
-    string Name);
 
 public record Capsule(
     string Name,
     string? Description,
-    string? ImageUrl,
     double Price,
-    Info? Info);
+    Info? Info,
+    string ImageUrl);
 
 public record Info(
     int? Intensity,
@@ -28,3 +30,4 @@ public record Info(
     
 public record Flavor(
     string Name);
+

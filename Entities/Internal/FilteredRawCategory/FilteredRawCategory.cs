@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Domain.External;
+﻿namespace Domain.Entities.Internal;
 
 public class FilteredRawCategory
 {
