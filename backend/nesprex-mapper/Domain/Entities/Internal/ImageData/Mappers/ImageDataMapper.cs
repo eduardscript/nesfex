@@ -2,7 +2,9 @@
 
 public static class ImageDataMapper
 {
-    public static IEnumerable<ImageData> GetDomainEntitiesImages(this IEnumerable<Technology> technologies)
+    public static IEnumerable<ImageData> GetDomainEntitiesImages(
+        this IEnumerable<Technology> technologies,
+        string? imageUrl = null)
     {
         var imagesData = new List<ImageData>();
 
@@ -25,7 +27,7 @@ public static class ImageDataMapper
                     imagesData.Add(new ImageData(
                         new[] { "capsules", technology.Name.ToKey(), category.Name.ToKey(), },
                         capsule.Name.ToKey(),
-                        capsule.ImageUrl.ToKey()));
+                        $"{imageUrl?.TrimEnd('/')}{capsule.ImageUrl.ToKey()}"));
                 }
             }
         }

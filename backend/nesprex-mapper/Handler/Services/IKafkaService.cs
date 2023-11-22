@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Text.Json;
+﻿using System.Text.Json;
 using Confluent.Kafka;
-using Domain.Entities.Internal;
 using Domain.Utilities.Extensions;
 using Handler.Configurations;
 using Microsoft.Extensions.Options;
