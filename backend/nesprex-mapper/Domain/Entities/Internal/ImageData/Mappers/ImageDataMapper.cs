@@ -23,7 +23,7 @@ public static class ImageDataMapper
                 foreach (var capsule in category.Capsules)
                 {
                     imagesData.Add(new ImageData(
-                        new[] { technology.Name.ToKey(), category.Name.ToKey(), },
+                        new[] { "capsules", technology.Name.ToKey(), category.Name.ToKey(), },
                         capsule.Name.ToKey(),
                         capsule.ImageUrl.ToKey()));
                 }
