@@ -1,0 +1,3221 @@
+{
+    "categories": [
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-variations-limited-editions",
+            "name": "Limited Editions",
+            "description": "Here you&rsquo;ll find rare and/or seasonal coffees, to give a special aroma to special moments.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/29387541446686/festive-ol.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-origins",
+            "name": "Reviving Origins",
+            "description": "With the Reviving Origins range, you can seasonally enjoy amazing coffees from unique origins that were almost lost due to conflicts or natural disasters, but which we managed to recover.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/28986457325598/ro-ol.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana",
+            "name": "Ispirazione Italiana",
+            "description": "Embark on an intense journey, with your Nespresso capsule, through the regions where coffee is an art, with 7 coffees and 2 decaffeinatos inspired by the tradition of Italian roasting.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/26739670253598/ispirazione-napoli.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin",
+            "name": "Master Origins",
+            "description": "From each of these origins and the hands of master craftsmen, all made with care. Explore the Master Origins range and discover peculiar techniques and unique terroirs, in your cup.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/26611616317470/india-XL.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+            "name": "Barista Creations",
+            "description": "Whether it's a cappuccino, latte, iced coffee or even a filter coffee, with these Nespresso coffees it's never been easier to awaken the Barista that lives in you.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/26607284682782/vanilla-eclair-XL.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+            "name": "World Explorations",
+            "description": "A travel through aromas with a stopover in your cup. The World Explorations range allows you to discover (and taste!) the coffee cultures from the most iconic cities in the world.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/26611616415774/cape-town-envivo-lungo-XL.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-the-original-collection",
+            "name": "The Original Collection",
+            "description": "Espresso is in our name and probably on all your days. Discover your favorites among the different aromas, textures and intensities.",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/26611616612382/capriccio-XL.png",
+                "altText": null
+            },
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-organic-edition",
+            "name": "Organic",
+            "description": "{\"color\":\"#fff\",\"name\":\"ORGANIC\",\"bgColor\":\"#97be0d\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-espresso-ml",
+            "name": "Espresso 40 ml",
+            "description": "{\"color\":\"#fff\",\"name\":\"Espresso 40 ml\",\"bgColor\":\"#9b9b9b\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml",
+            "name": "Lungo 110 ml",
+            "description": "{\"color\":\"#fff\",\"name\":\"Lungo 110 ml\",\"bgColor\":\"#9b9b9b\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-seasonal-edition",
+            "name": "Seasonal",
+            "description": "{\"color\":\"#fff\",\"name\":\"SEASONAL\",\"bgColor\":\"#008b8b\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-limited-edition",
+            "name": "Limited Editions",
+            "description": "{\"color\":\"#fff\",\"name\":\"LIMITED EDITION\",\"bgColor\":\"#24454f\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-rio-janeiro-travel",
+            "name": "Relaxed traveller",
+            "description": "{\"color\":\"#fff\",\"name\":\"Relaxed traveller\",\"bgColor\":\"#739d38\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-istanbul-travel",
+            "name": "Cultural traveller",
+            "description": "{\"color\":\"#fff\",\"name\":\"Cultural traveller\",\"bgColor\":\"#ecac4c\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-paris-travel",
+            "name": "Cosmopolitan traveller",
+            "description": "{\"color\":\"#fff\",\"name\":\"Cosmopolitan traveller\",\"bgColor\":\"#000\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-new",
+            "name": "New",
+            "description": "{\"color\":\"#fff\",\"name\":\"New\",\"bgColor\":\"#aa5d3f\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-flavoured-recipes",
+            "name": "Flavoured Recipes",
+            "description": "{\"color\":\"#fff\",\"name\":\"Flavoured Recipes\",\"bgColor\":\"#955f2f\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-recipes-with-milk",
+            "name": "Recipes with milk",
+            "description": "{\"color\":\"#fff\",\"name\":\"Recipes with milk\",\"bgColor\":\"#c8b17e\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-deca-coffees",
+            "name": "Decaffeinato",
+            "description": "{\"color\":\"#fff\",\"name\":\"Decaffeinato\",\"bgColor\":\"#aa3c24\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-range-label-filter",
+            "name": "Filter style coffee",
+            "description": "{\"color\":\"#fff\",\"name\":\"Filter Coffee Style\",\"bgColor\":\"#d1a963\"}",
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-range"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+            "name": "Ristretto",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/12826529562654/respPLPcupsizeRistrettoOriginal.svg",
+                "altText": "Ristretto extraction method"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/12826528743454/respPDPcupsizeRistrettoOriginal.svg",
+                "altText": "Ristretto 0.85 oz"
+            },
+            "url": null,
+            "capacityLabel": "25 ML",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-espresso",
+            "name": "Espresso",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/10618736836638/respPLPcupsizeEspressoOriginal.svg",
+                "altText": "Espresso extraction method"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/10618736640030/respPDPcupsizeEspressoOriginal.svg",
+                "altText": "espresso 1.35 oz coffee cup size"
+            },
+            "url": null,
+            "capacityLabel": "40 ML",
+            "rangeLink": null,
+            "subCategories": [
+                "nesclub2.pt.b2c/cat/cupsize-espresso-line1",
+                "nesclub2.pt.b2c/cat/cupsize-espresso-line2"
+            ],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-lungo",
+            "name": "Lungo",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/12543063425054/PLP-cup-size-lungo.svg",
+                "altText": "Cupsize Lungo PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/10618736705566/respPDPcupsizeLungoOriginal.svg",
+                "altText": "Cupsize Lungo PDP"
+            },
+            "url": null,
+            "capacityLabel": "110 ML",
+            "rangeLink": null,
+            "subCategories": [
+                "nesclub2.pt.b2c/cat/cupsize-lungo-line1"
+            ],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-coffee",
+            "name": "Mug",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/15118351630366/respPLPcupsizeMugVertuo.svg",
+                "altText": "Cupsize Mug Vertuo PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/15118351368222/respPDPcupsizeMugVertuo.svg",
+                "altText": "Cupsize Espresso Vertuo PDP"
+            },
+            "url": null,
+            "capacityLabel": "230ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato",
+            "name": "Cappuccino and Latte Macchiato",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/12351438913566/respPLPcupsizeCappuccinoAndLatteMacchiato.svg",
+                "altText": "Cappuccino extraction method"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/12351439339550/respPDPcupsizeCappuccinoAndLatteMacchiato.svg",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-Cortado-Cappuccino",
+            "name": "Cortado Cappuccino",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/12347822145566/respPLPcupsizeCortadoAndCappuccino.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/12351437045790/respPDPcupsizeCortadoAndCappuccino.svg",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-gran-lungo",
+            "name": "Gran Lungo",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/15118351499294/respPLPcupsizeGranlungoVertuo.svg",
+                "altText": "Cupsize Gran Lungo PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/15118351204382/respPDPcupsizeGranlungoVertuo.svg",
+                "altText": "Cupsize Gran Lungo PDP"
+            },
+            "url": null,
+            "capacityLabel": "150 ML",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-espresso-vertuo",
+            "name": "Espresso",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/15118351564830/respPLPcupsizeEspressoVertuo.svg",
+                "altText": "Cupsize Espresso Vertuo PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/15118351269918/respPDPcupsizeEspressoVertuo.svg",
+                "altText": "Cupsize Espresso Vertuo PDP"
+            },
+            "url": null,
+            "capacityLabel": "40ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-icedRecipe",
+            "name": "Iced Recipe",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/13141810249758/respPLPcupsizeICED-01.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/13141211840542/respPDPcupsizeIcedRecipe.png",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto-b2b",
+            "name": "Ristretto",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/10618736771102/respPLPcupsizeRistrettoOriginal.svg",
+                "altText": "Cupsize Ristreto PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/10618736574494/respPDPcupsizeRistrettoOriginal.svg",
+                "altText": "Cupsize Ristreto PDP"
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-espresso-b2b",
+            "name": "Espresso",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/10618736836638/respPLPcupsizeEspressoOriginal.svg",
+                "altText": "Espresso extraction method"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/10618736640030/respPDPcupsizeEspressoOriginal.svg",
+                "altText": "espresso 1.35 oz coffee cup size"
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-lungo-b2b",
+            "name": "Lungo",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/12543063425054/PLP-cup-size-lungo.svg",
+                "altText": "Cupsize Lungo PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/10618736705566/respPDPcupsizeLungoOriginal.svg",
+                "altText": "Cupsize Lungo PDP"
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-carafe-vertuo",
+            "name": "Carafe",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/13559764942878/respPLPcupsizeCarafeVertuo.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/13559763730462/respPDPcupsizeCarafeVertuo.svg",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": "535ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-alto",
+            "name": "Alto",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/15118351433758/respPLPcupsizeAltoVertuo.svg",
+                "altText": "Cupsize Alto PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/15118351138846/respPDPcupsizeAltoVertuo.svg",
+                "altText": "Cupsize Alto PDP"
+            },
+            "url": null,
+            "capacityLabel": "355 ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-double-espresso-vertuo",
+            "name": "Double Espresso",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/12631276290078/respPLPcupsizeVertuo-double-espresso-00.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/14732776669214/respPLPcupsizeVertuo-double-espresso-00-whitev2.svg",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": "80ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-XL",
+            "name": "XL",
+            "description": "355 ml",
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/10618737229854/respPLPcupsizeAltoVertuo.svg",
+                "altText": "Cupsize Alto PLP"
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/26575554248734/panel-alto-white2.png",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": "355 ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-cold-brew",
+            "name": "Cold Brew",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/27023748104222/respPLPcupsizeVertuo-cold-brew-00.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/27023593046046/respPLPcupsizeVertuo-cold-brew-00-white.svg",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": "355ml",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-lungo-plus",
+            "name": "Lungo+",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/27560876703774/PLP-cup-size-lungo-01.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/27560894267422/lungo-plus-01.svg",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": "150 ML",
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-cupSize-icedRecipe-vertuo",
+            "name": "Iced Recipe Vertuo",
+            "description": null,
+            "icon": {
+                "url": "/ecom/medias/sys_master/public/13143338450974/respPLPcupsizeICED-02.svg",
+                "altText": null
+            },
+            "detailsIcon": {
+                "url": "/ecom/medias/sys_master/public/13372572336158/respPDPcupsizeIcedRecipe.png",
+                "altText": null
+            },
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-intense",
+            "name": "Intense",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-balanced",
+            "name": "Balanced",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-fruity",
+            "name": "Fruity",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-veryRoasted",
+            "name": "Very Roasted",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-cocoa",
+            "name": "Cocoa",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-roasted",
+            "name": "Roasted",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-floral",
+            "name": "Floral",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-bergamot",
+            "name": "Bergamot",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-hintOfFruity",
+            "name": "Hint Of Fruity",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-spicy",
+            "name": "Spicy",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-woody",
+            "name": "Woody",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured",
+            "name": "Flavoured",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-hazelnut",
+            "name": "Hazelnut",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-biscuity",
+            "name": "Biscuity",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-baked-apple-flavors",
+            "name": "Baked apple flavors",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-brown-sugar-and-roasted-notes",
+            "name": "Brown sugar and roasted notes",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-intense-b2b",
+            "name": "Intense",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-fruity-b2b",
+            "name": "Fruity / Flowery",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-balanced-b2b",
+            "name": "Balanced",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-exotic",
+            "name": "Exotic",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-tropical",
+            "name": "Tropical",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-citric",
+            "name": "Citric",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-berry",
+            "name": "Berry",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-peppermint",
+            "name": "Peppermint",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-candy-sweet",
+            "name": "Sweet candy",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-coconut",
+            "name": "Coconut",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-peppery-note",
+            "name": "Peppery Note",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-ginseng",
+            "name": "Ginseng",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-watermelon",
+            "name": "Watermelon",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-hint-of-vanilla",
+            "name": "Hint of Vanilla",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-RedFruit",
+            "name": "Red Fruit",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-smoky-wood",
+            "name": "Powerful smoky notes of wood",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-flowery",
+            "name": "Flowery",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-Honey",
+            "name": "Honey",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-mild-cereal",
+            "name": "Mild Cereal",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        },
+        {
+            "id": "nesclub2.pt.b2c/cat/capsule-aromatic-almond",
+            "name": "Almond",
+            "description": null,
+            "icon": null,
+            "detailsIcon": null,
+            "url": null,
+            "capacityLabel": null,
+            "rangeLink": null,
+            "subCategories": [],
+            "superCategories": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic"
+            ]
+        }
+    ],
+    "ratingsAndReviews": null,
+    "enabledTechnologies": [
+        {
+            "id": "nesclub2.pt.b2c/machineTechno/vertuo",
+            "isSelected": false,
+            "media": {
+                "url": "/ecom/medias/sys_master/public/15417060294686/capsule-technology-filter-on-vertuo-resp.png",
+                "altText": null
+            },
+            "name": "Vertuo",
+            "url": "/pt/en/order/capsules/vertuo"
+        },
+        {
+            "id": "nesclub2.pt.b2c/machineTechno/original",
+            "isSelected": true,
+            "media": {
+                "url": "/ecom/medias/sys_master/public/15417060229150/capsule-technology-filter-on-original-resp.png",
+                "altText": null
+            },
+            "name": "Original",
+            "url": "/pt/en/order/capsules/original"
+        }
+    ],
+    "products": [
+        {
+            "id": "erp.pt.b2c/prod/133498",
+            "internationalId": "133498",
+            "legacyId": "133498",
+            "name": "Original Advent Calendar",
+            "internationalName": "Advent Calendar, Original",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/28918354706462/C-1191-Responsive-PLPimage-320320.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": null,
+            "price": 44.9,
+            "url": "/pt/en/order/capsules/original/orignal-advent-calendar",
+            "salesMultiple": 1,
+            "unitQuantity": 24,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-variations-limited-editions",
+                "nesclub2.pt.b2c/cat/capsule-range-label-limited-edition"
+            ],
+            "cupSizes": [],
+            "flavors": [],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7806.04",
+            "internationalId": "7806.04",
+            "legacyId": "7806.04",
+            "name": "Festive Black Espresso",
+            "internationalName": "OL Festive Black Esp.",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/28562621071390/festive-black-espresso-2x.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "WOODY AND SPICY",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/festive-black-espresso-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 3,
+            "acidity": 2,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-variations-limited-editions",
+                "nesclub2.pt.b2c/cat/capsule-range-label-limited-edition"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-woody",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-spicy"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7805.04",
+            "internationalId": "7805.04",
+            "legacyId": "7805.04",
+            "name": "Frosted Caramel Nuts",
+            "internationalName": "OL Caramel Frosted Nut",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/28562621562910/frosted-caramel-nuts-2x.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "BLOND CARAMEL AND ALMOND",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/frosted-caramel-nuts-flavoured-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-variations-limited-editions",
+                "nesclub2.pt.b2c/cat/capsule-range-label-limited-edition"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-almond"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7804.04",
+            "internationalId": "7804.04",
+            "legacyId": "7804.04",
+            "name": "Seasonal Delight Spices",
+            "internationalName": "OL Delight Spices",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/28562623168542/seasonal-delight-spices-2x.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "ALL-SPICE AND WINEY",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/seasonal-delight-spices-flavoured-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-variations-limited-editions",
+                "nesclub2.pt.b2c/cat/capsule-range-label-limited-edition"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7576.04",
+            "internationalId": "7576.04",
+            "legacyId": "7576.04",
+            "name": "Amaha awe Uganda",
+            "internationalName": "RO Uganda",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15917943062558/amaha-awe-uganda-XL.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "FLORAL AND WILD",
+            "price": 0.69,
+            "url": "/pt/en/order/capsules/original/amaha-awe-uganda-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 8,
+            "bitterness": 4,
+            "acidity": 2,
+            "roastLevel": 4,
+            "body": 4,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-origins",
+                "nesclub2.pt.b2c/cat/capsule-range-label-seasonal-edition"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-floral",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-woody"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7742.30",
+            "internationalId": "7742.30",
+            "legacyId": "7742.30",
+            "name": "Napoli",
+            "internationalName": "Napoli",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941832114206/napoli-plp-image.png",
+                "altText": "Napoli"
+            },
+            "type": "capsule",
+            "headline": "EXCEPTIONALLY DARK AND CREAMY COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/ispirazione-napoli-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 13,
+            "bitterness": 5,
+            "acidity": 1,
+            "roastLevel": 5,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-roasted"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7741.30",
+            "internationalId": "7741.30",
+            "legacyId": "7741.30",
+            "name": "Kazaar",
+            "internationalName": "Kazaar",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441096871966/ispirazione-palermo-kazaar-XL.png",
+                "altText": "Kazaar"
+            },
+            "type": "capsule",
+            "headline": "EXCEPTIONALLY INTENSE AND SYRUPY COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/kazaar-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 12,
+            "bitterness": 5,
+            "acidity": 1,
+            "roastLevel": 5,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-woody"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7748.30",
+            "internationalId": "7748.30",
+            "legacyId": "7748.30",
+            "name": "Ristretto",
+            "internationalName": "Ristretto",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941820973086/ristretto-plp-image.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "POWERFUL AND CONTRASTING COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/ristretto-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 10,
+            "bitterness": 4,
+            "acidity": 3,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-veryRoasted",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-hintOfFruity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7746.30",
+            "internationalId": "7746.30",
+            "legacyId": "7746.30",
+            "name": "Ristretto Decaffeinato",
+            "internationalName": "Ristretto Deca",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15995768799262/ristretto-plp-image.png",
+                "altText": "Ristretto Decaffeinato"
+            },
+            "type": "capsule",
+            "headline": "POWERFUL AND CONTRASTING COFFEE",
+            "price": 0.48,
+            "url": "/pt/en/order/capsules/original/ristretto-decaffeinato-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 10,
+            "bitterness": 4,
+            "acidity": 3,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana",
+                "nesclub2.pt.b2c/cat/capsule-range-label-deca-coffees"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-veryRoasted",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-hintOfFruity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7765.30",
+            "internationalId": "7765.30",
+            "legacyId": "7765.30",
+            "name": "Arpeggio",
+            "internationalName": "Arpeggio",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941688623134/arpegio-plp-image.png",
+                "altText": "Arpeggio"
+            },
+            "type": "capsule",
+            "headline": "INTENSE AND CREAMY COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/arpeggio-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 9,
+            "bitterness": 4,
+            "acidity": 2,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-veryRoasted",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-cocoa"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7743.30",
+            "internationalId": "7743.30",
+            "legacyId": "7743.30",
+            "name": "Arpeggio Decaffeinato",
+            "internationalName": "Arpeggio Deca",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15995770306590/arpegio-plp-image.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "INTENSE AND CREAMY COFFEE",
+            "price": 0.48,
+            "url": "/pt/en/order/capsules/original/arpeggio-decaffeinato-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 9,
+            "bitterness": 4,
+            "acidity": 2,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana",
+                "nesclub2.pt.b2c/cat/capsule-range-label-deca-coffees"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-veryRoasted",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-cocoa"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7747.30",
+            "internationalId": "7747.30",
+            "legacyId": "7747.30",
+            "name": "Roma",
+            "internationalName": "Roma",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441097035806/ispirazione-roma-XL.png",
+                "altText": "Roma"
+            },
+            "type": "capsule",
+            "headline": "FULL AND BALANCED COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/ispirazione-roma-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 8,
+            "bitterness": 4,
+            "acidity": 4,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-woody"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7749.30",
+            "internationalId": "7749.30",
+            "legacyId": "7749.30",
+            "name": "Venezia",
+            "internationalName": "Venezia",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15995760214046/venezia-plp-image.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "HARMONIOUSLY BALANCED AND THICK BODY",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/ispirazione-venezia-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 8,
+            "bitterness": 3,
+            "acidity": 1,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-ristretto",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7745.30",
+            "internationalId": "7745.30",
+            "legacyId": "7745.30",
+            "name": "Livanto ",
+            "internationalName": "Livanto",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15995762606110/livanto-plp-image.png",
+                "altText": "Livanto "
+            },
+            "type": "capsule",
+            "headline": "ROUND AND BALANCED COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/livanto-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 6,
+            "bitterness": 3,
+            "acidity": 3,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-balanced"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7733.04",
+            "internationalId": "7733.04",
+            "legacyId": "7733.04",
+            "name": "India",
+            "internationalName": "MO India R04",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441091170334/india-XL.png",
+                "altText": "India"
+            },
+            "type": "capsule",
+            "headline": "INTENSE AND SPICY",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/monsoon-indian-coffee-capsules",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 11,
+            "bitterness": 5,
+            "acidity": 1,
+            "roastLevel": 5,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-spicy"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7722.04",
+            "internationalId": "7722.04",
+            "legacyId": "7722.04",
+            "name": "Indonesia",
+            "internationalName": "MO Indonesia R04",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441091596318/indonesia-XL.png",
+                "altText": "Indonesia"
+            },
+            "type": "capsule",
+            "headline": "RICH AND WOODY",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/wet-hulled-indonesian-coffee-capsules",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 8,
+            "bitterness": 3,
+            "acidity": 2,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-woody"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7734.04",
+            "internationalId": "7734.04",
+            "legacyId": "7734.04",
+            "name": "Peru Organic",
+            "internationalName": "MO PERU ORGANIC",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14938066026526/C-0883-plp-image-318px318px.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "HIGH UP IN THE ANDES",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/peru-organic-coffee-capsule-original",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 6,
+            "bitterness": 3,
+            "acidity": 4,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin",
+                "nesclub2.pt.b2c/cat/capsule-range-label-organic-edition"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-fruity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7720.04",
+            "internationalId": "7720.04",
+            "legacyId": "7720.04",
+            "name": "Colombia",
+            "internationalName": "MO Colombia R04",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441091694622/colombia-XL.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "FRUITY AND VIBRANT",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/late-harvest-arabica-colombian-coffee-capsules",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 6,
+            "bitterness": 3,
+            "acidity": 4,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7723.04",
+            "internationalId": "7723.04",
+            "legacyId": "7723.04",
+            "name": "Nicaragua",
+            "internationalName": "Master Origin Nicaragua v04",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441091792926/nicaragua-XL.png",
+                "altText": "Nicaragua"
+            },
+            "type": "capsule",
+            "headline": "SWEET AND HARMONIOUS",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/capsulas-cafe-nicaragua-black-honey",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 5,
+            "bitterness": 2,
+            "acidity": 2,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7719.04",
+            "internationalId": "7719.04",
+            "legacyId": "7719.04",
+            "name": "Ethiopia",
+            "internationalName": "Master Origin Ethiopia N1 v04",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441091891230/ethiopia-XL.png",
+                "altText": null
+            },
+            "type": "capsule",
+            "headline": "FLOWERY AND BRIGHT",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/dry-processed-ethiopian-coffee-capsules",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 4,
+            "bitterness": 2,
+            "acidity": 4,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-fruity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7780.30",
+            "internationalId": "7780.30",
+            "legacyId": "7780.30",
+            "name": "Filter Style Intense",
+            "internationalName": "Filter Style Intense",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16606948491294/C-1037-ResponsivePLPImage.png",
+                "altText": "Filter Style Intense"
+            },
+            "type": "capsule",
+            "headline": "ROASTED AND SMOKY",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/filter-style-intense-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 1,
+            "roastLevel": 5,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-new",
+                "nesclub2.pt.b2c/cat/capsule-range-label-filter"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo-plus"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7783.30",
+            "internationalId": "7783.30",
+            "legacyId": "7783.30",
+            "name": "Filter Style Mild",
+            "internationalName": "Filter Style Mild",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16606950555678/C-1036-ResponsivePLPImage.png",
+                "altText": "Filter Style Mild"
+            },
+            "type": "capsule",
+            "headline": "FLORAL AND MALTED CEREAL",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/filter-style-mild-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 1,
+            "acidity": 1,
+            "roastLevel": 1,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-new",
+                "nesclub2.pt.b2c/cat/capsule-range-label-filter"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo-plus"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7796.30",
+            "internationalId": "7796.30",
+            "legacyId": "7796.30",
+            "name": "Nocciola",
+            "internationalName": "BC NOCCIOLA",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/17432559943710/C-1063-Responsive-PLP.png",
+                "altText": "Nocciola"
+            },
+            "type": "capsule",
+            "headline": "RICH AND NUTTY",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/nocciola-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-new",
+                "nesclub2.pt.b2c/cat/capsule-range-label-flavoured-recipes"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-biscuity",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-hazelnut"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7768.30",
+            "internationalId": "7768.30",
+            "legacyId": "7768.30",
+            "name": "Vaniglia",
+            "internationalName": "BC VANIGLIA",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/17432222531614/C-1062-Responsive-PLP.png",
+                "altText": "Vaniglia"
+            },
+            "type": "capsule",
+            "headline": "CUSTARDY AND VANILLA",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/vaniglia-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-flavoured-recipes",
+                "nesclub2.pt.b2c/cat/capsule-range-label-new"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7767.30",
+            "internationalId": "7767.30",
+            "legacyId": "7767.30",
+            "name": "Caramello",
+            "internationalName": "BC CARAMELLO",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/17431332945950/C-1061-Responsive-PLP.png",
+                "altText": "Caramello"
+            },
+            "type": "capsule",
+            "headline": "CREAMY AND CARAMEL",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/caramello-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-new",
+                "nesclub2.pt.b2c/cat/capsule-range-label-flavoured-recipes"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7766.30",
+            "internationalId": "7766.30",
+            "legacyId": "7766.30",
+            "name": "Cioccolatino",
+            "internationalName": "BC CIOCCO",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/17431322361886/C-1060-Responsive-PLP.png",
+                "altText": "Cioccolatino"
+            },
+            "type": "capsule",
+            "headline": "CREAMY AND CHOCOLATEY",
+            "price": 0.57,
+            "url": "/pt/en/order/capsules/original/cioccolatino-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-flavoured-recipes",
+                "nesclub2.pt.b2c/cat/capsule-range-label-new"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo",
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-flavoured"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7761.30",
+            "internationalId": "7761.30",
+            "legacyId": "7761.30",
+            "name": "Scuro",
+            "internationalName": "Barista Scuro",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16654104068126/scuro-2x.png",
+                "altText": "Scuro"
+            },
+            "type": "capsule",
+            "headline": "FOR INTENSE YET BALANCED RECIPES WITH MILK",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/barista-creations-scuro-coffee-capsules",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-recipes-with-milk"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-roasted",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-balanced"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7762.30",
+            "internationalId": "7762.30",
+            "legacyId": "7762.30",
+            "name": "Chiaro",
+            "internationalName": "Barista Chiaro",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16653521485854/chiaro-2x.png",
+                "altText": "Chiaro"
+            },
+            "type": "capsule",
+            "headline": "FOR SWEET AND SMOOTH RECIPES WITH MILK  ",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/barista-creations-chiaro-coffee-capsules",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-recipes-with-milk"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cappuccino-And-Latte-Macchiato"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-balanced",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-biscuity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7760.30",
+            "internationalId": "7760.30",
+            "legacyId": "7760.30",
+            "name": "Corto",
+            "internationalName": "Barista Corto",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16653730414622/corto-2x.png",
+                "altText": "Corto"
+            },
+            "type": "capsule",
+            "headline": "FOR EXTRA INTENSE RECIPES WITH MILK",
+            "price": 0.53,
+            "url": "/pt/en/order/capsules/original/barista-creations-corto-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 0,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-recipes-with-milk"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-Cortado-Cappuccino"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-spicy",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-intense"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7607.30",
+            "internationalId": "7607.30",
+            "legacyId": "7607.30",
+            "name": "Rio de Janeiro Espresso",
+            "internationalName": "World Explorations Rio",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15430408437790/C-0888-before-PLP-318x318px.png",
+                "altText": "Rio de Janeiro Espresso"
+            },
+            "type": "capsule",
+            "headline": "HERBAL AND SPICY",
+            "price": 0.48,
+            "url": "/pt/en/order/capsules/original/rio-de-janeiro-espresso-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 9,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-espresso-ml",
+                "nesclub2.pt.b2c/cat/capsule-range-label-rio-janeiro-travel"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-spicy"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7738.30",
+            "internationalId": "7738.30",
+            "legacyId": "7738.30",
+            "name": "Istanbul Espresso",
+            "internationalName": "World Explorations Istanbul",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15414727049246/before-PLP-318x318px.png",
+                "altText": "Istanbul Espresso"
+            },
+            "type": "capsule",
+            "headline": "ROASTED WITH A FRUITY NOTE AND A HINT OF ALMOND",
+            "price": 0.48,
+            "url": "/pt/en/order/capsules/original/istanbul-espresso-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 8,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-espresso-ml",
+                "nesclub2.pt.b2c/cat/capsule-range-label-istanbul-travel"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-fruity",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-roasted"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7608.30",
+            "internationalId": "7608.30",
+            "legacyId": "7608.30",
+            "name": "Paris Espresso",
+            "internationalName": "World Explorations Paris",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15414968844318/C-0887-before-PLP-318x318px.png",
+                "altText": "Paris Espresso"
+            },
+            "type": "capsule",
+            "headline": "CEREAL AND BISCUITY, WITH A HINT A CITRUS",
+            "price": 0.48,
+            "url": "/pt/en/order/capsules/original/paris-espresso-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 6,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-espresso-ml",
+                "nesclub2.pt.b2c/cat/capsule-range-label-paris-travel"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-biscuity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7756.30",
+            "internationalId": "7756.30",
+            "legacyId": "7756.30",
+            "name": "Cape Town Lungo",
+            "internationalName": "WE Cape Town",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14441093136414/capetown-envivo-lungo-XL.png",
+                "altText": "Cape Town Lungo"
+            },
+            "type": "capsule",
+            "headline": "TREAD A PATH  POTENT & ROASTED",
+            "price": 0.51,
+            "url": "/pt/en/order/capsules/original/cape-town-lungo-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 10,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-roasted",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-woody"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7755.30",
+            "internationalId": "7755.30",
+            "legacyId": "7755.30",
+            "name": "Stockholm Lungo",
+            "internationalName": "WE Stockholm",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15983641198622/C-0686-Resp-PLP-image.png",
+                "altText": "Stockholm Lungo"
+            },
+            "type": "capsule",
+            "headline": "WARM HERITAGE RICH AND FULL-BODIED",
+            "price": 0.51,
+            "url": "/pt/en/order/capsules/original/stockholm-lungo-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 8,
+            "bitterness": 3,
+            "acidity": 2,
+            "roastLevel": 4,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-roasted"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7758.30",
+            "internationalId": "7758.30",
+            "legacyId": "7758.30",
+            "name": "Tokyo Lungo",
+            "internationalName": "WE Tokyo",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941830180894/Tokyo-plp-image.png",
+                "altText": "Tokyo Lungo"
+            },
+            "type": "capsule",
+            "headline": "SIPS OF ELEGANCE FLORAL AND COMPLEX",
+            "price": 0.51,
+            "url": "/pt/en/order/capsules/original/tokyo-lungo-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 6,
+            "bitterness": 2,
+            "acidity": 1,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-roasted"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7754.30",
+            "internationalId": "7754.30",
+            "legacyId": "7754.30",
+            "name": "Vienna Lungo",
+            "internationalName": "WE Vienna",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941827428382/vienna-plp-image.png",
+                "altText": "Vienna Lungo"
+            },
+            "type": "capsule",
+            "headline": "ON A CLASSIC NOTE ROUND AND SMOOTH",
+            "price": 0.51,
+            "url": "/pt/en/order/capsules/original/vienna-lungo-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 6,
+            "bitterness": 2,
+            "acidity": 1,
+            "roastLevel": 3,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7759.30",
+            "internationalId": "7759.30",
+            "legacyId": "7759.30",
+            "name": "Shanghai Lungo",
+            "internationalName": "WE Shanghai",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16724973486110/shangai-lungo-2x.png",
+                "altText": "Shanghai Lungo"
+            },
+            "type": "capsule",
+            "headline": "MODERN TRADITION FRUITY WITH FINE ACIDITY",
+            "price": 0.51,
+            "url": "/pt/en/order/capsules/original/shanghai-lungo-coffee-pods",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 5,
+            "bitterness": 1,
+            "acidity": 2,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-citric",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-berry"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7757.30",
+            "internationalId": "7757.30",
+            "legacyId": "7757.30",
+            "name": "Buenos Aires Lungo",
+            "internationalName": "WE Buenos Aires",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/16653500481566/buenos-aires-lungo-2x.png",
+                "altText": "Buenos Aires Lungo"
+            },
+            "type": "capsule",
+            "headline": "DISTINCT DELIGHT  SWEET AND CEREAL",
+            "price": 0.51,
+            "url": "/pt/en/order/capsules/original/buenos-aires-lungo-coffee-pods",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 4,
+            "bitterness": 1,
+            "acidity": 2,
+            "roastLevel": 1,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+                "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-lungo"
+            ],
+            "flavors": [],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7589.30",
+            "internationalId": "7589.30",
+            "legacyId": "7589.30",
+            "name": "Capriccio",
+            "internationalName": "Capriccio",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941281251358/capriccio-plp-image.png",
+                "altText": "Capriccio"
+            },
+            "type": "capsule",
+            "headline": "RICH AND  DISTINCTIVE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/capriccio-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 5,
+            "bitterness": 3,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-the-original-collection"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-balanced"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7586.30",
+            "internationalId": "7586.30",
+            "legacyId": "7586.30",
+            "name": "Volluto",
+            "internationalName": "Volluto",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14460689088542/volluto-XL.png",
+                "altText": "Volluto"
+            },
+            "type": "capsule",
+            "headline": "SWEET AND LIGHT",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/volluto-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 4,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-the-original-collection"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-balanced",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-fruity"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7587.30",
+            "internationalId": "7587.30",
+            "legacyId": "7587.30",
+            "name": "Volluto Decaffeinato",
+            "internationalName": "Volluto Deca",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/14460689285150/volluto-decaffeinato-XL.png",
+                "altText": "Volluto Decaffeinato"
+            },
+            "type": "capsule",
+            "headline": "SWEET AND LIGHT COFFEE",
+            "price": 0.48,
+            "url": "/pt/en/order/capsules/original/volluto-decaffeinato-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 4,
+            "bitterness": null,
+            "acidity": null,
+            "roastLevel": null,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-the-original-collection",
+                "nesclub2.pt.b2c/cat/capsule-range-label-deca-coffees"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-fruity",
+                "nesclub2.pt.b2c/cat/capsule-aromatic-balanced"
+            ],
+            "packagingType": null
+        },
+        {
+            "id": "erp.pt.b2c/prod/7588.30",
+            "internationalId": "7588.30",
+            "legacyId": "7588.30",
+            "name": "Cosi ",
+            "internationalName": "Cosi",
+            "description": null,
+            "image": {
+                "url": "/ecom/medias/sys_master/public/15941264244766/cosi-plp-image.png",
+                "altText": "Cosi"
+            },
+            "type": "capsule",
+            "headline": "MILD AND DELICATELY TOASTED COFFEE",
+            "price": 0.46,
+            "url": "/pt/en/order/capsules/original/cosi-coffee-capsule",
+            "salesMultiple": 10,
+            "unitQuantity": 1,
+            "maxOrderQuantity": null,
+            "available": true,
+            "inStock": true,
+            "pushRatingEnabled": false,
+            "technologies": [
+                "nesclub2.pt.b2c/machineTechno/original"
+            ],
+            "hidePrice": false,
+            "highlightLabels": [],
+            "intensity": 4,
+            "bitterness": 2,
+            "acidity": 3,
+            "roastLevel": 2,
+            "body": null,
+            "ranges": [
+                "nesclub2.pt.b2c/cat/capsule-range-the-original-collection"
+            ],
+            "cupSizes": [
+                "nesclub2.pt.b2c/cat/capsule-cupSize-espresso"
+            ],
+            "flavors": [
+                "nesclub2.pt.b2c/cat/capsule-aromatic-fruity"
+            ],
+            "packagingType": null
+        }
+    ],
+    "productGroups": [
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-variations-limited-editions",
+            "productIds": [
+                "erp.pt.b2c/prod/133498",
+                "erp.pt.b2c/prod/7806.04",
+                "erp.pt.b2c/prod/7805.04",
+                "erp.pt.b2c/prod/7804.04"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-origins",
+            "productIds": [
+                "erp.pt.b2c/prod/7576.04"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-ispirazione-italiana",
+            "productIds": [
+                "erp.pt.b2c/prod/7742.30",
+                "erp.pt.b2c/prod/7741.30",
+                "erp.pt.b2c/prod/7748.30",
+                "erp.pt.b2c/prod/7746.30",
+                "erp.pt.b2c/prod/7765.30",
+                "erp.pt.b2c/prod/7743.30",
+                "erp.pt.b2c/prod/7747.30",
+                "erp.pt.b2c/prod/7749.30",
+                "erp.pt.b2c/prod/7745.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-MasterOrigin",
+            "productIds": [
+                "erp.pt.b2c/prod/7733.04",
+                "erp.pt.b2c/prod/7722.04",
+                "erp.pt.b2c/prod/7734.04",
+                "erp.pt.b2c/prod/7720.04",
+                "erp.pt.b2c/prod/7723.04",
+                "erp.pt.b2c/prod/7719.04"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsules-range-barista-creations",
+            "productIds": [
+                "erp.pt.b2c/prod/7780.30",
+                "erp.pt.b2c/prod/7783.30",
+                "erp.pt.b2c/prod/7796.30",
+                "erp.pt.b2c/prod/7768.30",
+                "erp.pt.b2c/prod/7767.30",
+                "erp.pt.b2c/prod/7766.30",
+                "erp.pt.b2c/prod/7761.30",
+                "erp.pt.b2c/prod/7762.30",
+                "erp.pt.b2c/prod/7760.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-world-explorations",
+            "productIds": [
+                "erp.pt.b2c/prod/7607.30",
+                "erp.pt.b2c/prod/7738.30",
+                "erp.pt.b2c/prod/7608.30",
+                "erp.pt.b2c/prod/7756.30",
+                "erp.pt.b2c/prod/7755.30",
+                "erp.pt.b2c/prod/7758.30",
+                "erp.pt.b2c/prod/7754.30",
+                "erp.pt.b2c/prod/7759.30",
+                "erp.pt.b2c/prod/7757.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-the-original-collection",
+            "productIds": [
+                "erp.pt.b2c/prod/7589.30",
+                "erp.pt.b2c/prod/7586.30",
+                "erp.pt.b2c/prod/7587.30",
+                "erp.pt.b2c/prod/7588.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-organic-edition",
+            "productIds": [
+                "erp.pt.b2c/prod/7734.04"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-espresso-ml",
+            "productIds": [
+                "erp.pt.b2c/prod/7607.30",
+                "erp.pt.b2c/prod/7738.30",
+                "erp.pt.b2c/prod/7608.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-lungo-ml",
+            "productIds": [
+                "erp.pt.b2c/prod/7755.30",
+                "erp.pt.b2c/prod/7758.30",
+                "erp.pt.b2c/prod/7756.30",
+                "erp.pt.b2c/prod/7754.30",
+                "erp.pt.b2c/prod/7759.30",
+                "erp.pt.b2c/prod/7757.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-seasonal-edition",
+            "productIds": [
+                "erp.pt.b2c/prod/7576.04"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-limited-edition",
+            "productIds": [
+                "erp.pt.b2c/prod/133498",
+                "erp.pt.b2c/prod/7806.04",
+                "erp.pt.b2c/prod/7805.04",
+                "erp.pt.b2c/prod/7804.04"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-rio-janeiro-travel",
+            "productIds": [
+                "erp.pt.b2c/prod/7607.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-istanbul-travel",
+            "productIds": [
+                "erp.pt.b2c/prod/7738.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-paris-travel",
+            "productIds": [
+                "erp.pt.b2c/prod/7608.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-new",
+            "productIds": [
+                "erp.pt.b2c/prod/7780.30",
+                "erp.pt.b2c/prod/7783.30",
+                "erp.pt.b2c/prod/7796.30",
+                "erp.pt.b2c/prod/7767.30",
+                "erp.pt.b2c/prod/7768.30",
+                "erp.pt.b2c/prod/7766.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-flavoured-recipes",
+            "productIds": [
+                "erp.pt.b2c/prod/7796.30",
+                "erp.pt.b2c/prod/7767.30",
+                "erp.pt.b2c/prod/7768.30",
+                "erp.pt.b2c/prod/7766.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-recipes-with-milk",
+            "productIds": [
+                "erp.pt.b2c/prod/7762.30",
+                "erp.pt.b2c/prod/7760.30",
+                "erp.pt.b2c/prod/7761.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-deca-coffees",
+            "productIds": [
+                "erp.pt.b2c/prod/7743.30",
+                "erp.pt.b2c/prod/7587.30",
+                "erp.pt.b2c/prod/7746.30"
+            ]
+        },
+        {
+            "categoryId": "nesclub2.pt.b2c/cat/capsule-range-label-filter",
+            "productIds": [
+                "erp.pt.b2c/prod/7780.30",
+                "erp.pt.b2c/prod/7783.30"
+            ]
+        }
+    ]
+}
