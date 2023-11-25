@@ -6,7 +6,7 @@ namespace Domain.Services;
 
 public class RawDataService
 {
-    public static async Task<RawData> GetRawData(string vertuoJsonString, string originalJsonString)
+    public static RawData GetRawData(string vertuoJsonString, string originalJsonString)
     {
         var serializerOptions = new JsonSerializerOptions
         {

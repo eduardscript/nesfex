@@ -14,6 +14,10 @@ var host = Host.CreateDefaultBuilder(args)
         services
             .AddOptions<ServiceConfiguration>()
             .Bind(builder.Configuration.GetSection("Service"));
+        
+        services
+            .AddOptions<DataConfiguration>()
+            .Bind(builder.Configuration.GetSection("Data"));
 
         services.AddSingleton<IAdminClient>(serviceProvider =>
         {

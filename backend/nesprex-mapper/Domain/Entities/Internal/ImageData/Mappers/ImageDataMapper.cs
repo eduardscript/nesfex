@@ -13,7 +13,7 @@ public static class ImageDataMapper
             imagesData.Add(new ImageData(
                 new[] { "technologies" },
                 technology.Name.ToKey(),
-                technology.ImageUrl.ToKey()));
+                $"{imageUrl?.TrimEnd('/')}{technology.ImageUrl.ToKey()}"));
 
             foreach (var category in technology.Categories)
             {

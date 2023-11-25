@@ -17,17 +17,19 @@ public interface IDataProvider
 public class FileDataProvider : IDataProvider
 {
     private readonly ServiceConfiguration _serviceConfiguration;
+    private readonly DataConfiguration _dataConfiguration;
     private readonly ILogger<FileDataProvider> _logger;
-
-    const string VertuoJsonPath = @"C:\Users\edscriptdev\Desktop\New folder\data\vertuo.json";
-    const string OriginalJsonPath = @"C:\Users\edscriptdev\Desktop\New folder\data\original.json";
 
     private RawData? _cachedRawData;
     private DateTime _lastCacheUpdateTime;
 
-    public FileDataProvider(IOptions<ServiceConfiguration> serviceConfiguration, ILogger<FileDataProvider> logger)
+    public FileDataProvider(
+        IOptions<ServiceConfiguration> serviceConfiguration, 
+        IOptions<DataConfiguration> dataConfiguration, 
+        ILogger<FileDataProvider> logger)
     {
         _serviceConfiguration = serviceConfiguration.Value;
+        _dataConfiguration = dataConfiguration.Value;
         _logger = logger;
     }
     
@@ -38,7 +40,8 @@ public class FileDataProvider : IDataProvider
 
     public async Task<IEnumerable<ImageData>> GetImagesData()
     {
-        return (await GetCachedRawData()).MapRawDataToDomainEntities().GetDomainEntitiesImages();
+        return (await GetCachedRawData()).MapRawDataToDomainEntities()
+            .GetDomainEntitiesImages(_serviceConfiguration.Mapper.ImageUrl);
     }
 
     private async Task<RawData> GetCachedRawData()
@@ -58,9 +61,13 @@ public class FileDataProvider : IDataProvider
 
     private async Task<RawData> GetRawData()
     {
-        var vertuoJson = await File.ReadAllTextAsync(VertuoJsonPath);
-        var originalJson = await File.ReadAllTextAsync(OriginalJsonPath);
-
-        return await RawDataService.GetRawData(vertuoJson, originalJson);
+        List<string> rawTechnologiesJson = new();
+        foreach (var pathConfiguration in _dataConfiguration.Paths.Where(p => p.Name.StartsWith("technology")))
+        {
+            rawTechnologiesJson.Add(await File.ReadAllTextAsync(pathConfiguration.Path));
+        }
+      
+        // TODO: Refactor this to be more generic
+        return RawDataService.GetRawData(rawTechnologiesJson.First(), rawTechnologiesJson.Last());
     }
 }
