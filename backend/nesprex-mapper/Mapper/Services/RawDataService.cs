@@ -1,7 +1,6 @@
 ﻿using System.Text.Json;
-using Mapper.Entities.External.RawData;
+using Mapper.Dtos.RawData;
 using Mapper.Utilities.Comparers;
-using ExternalEntities = Mapper.Entities.External;
 
 namespace Mapper.Services;
 

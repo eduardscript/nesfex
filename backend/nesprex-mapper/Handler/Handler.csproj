@@ -21,6 +21,7 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\..\nesprex-shared\Shared.Domain\Shared.Domain.csproj" />
       <ProjectReference Include="..\Mapper\Mapper.csproj" />
     </ItemGroup>
 </Project>

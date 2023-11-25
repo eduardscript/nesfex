@@ -1,6 +1,6 @@
-﻿using Domain.Entities;
-using Domain.Repositories;
-using Domain.Repositories.Filters;
+﻿using Shared.Domain.Entities;
+using Shared.Domain.Repositories;
+using Shared.Domain.Repositories.Filters;
 using MongoDB.Driver;
 
 namespace Infra.MongoDb.Repositories;

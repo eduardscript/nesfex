@@ -1,7 +1,7 @@
-using Domain.Entities;
 using Handler.Configurations;
 using Handler.Services;
 using Microsoft.Extensions.Options;
+using Shared.Domain.Entities;
 
 namespace Handler;
 

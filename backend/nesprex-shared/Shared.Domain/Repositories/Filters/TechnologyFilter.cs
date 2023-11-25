@@ -1,0 +1,10 @@
+﻿namespace Shared.Domain.Repositories.Filters;
+
+public class TechnologyFilter
+{
+    public IEnumerable<string>? TechnologyNames { get; init; }
+    
+    public IEnumerable<string>? CategoryNames { get; init; }
+    
+    public IEnumerable<string>? CapsuleNames { get; init; }
+}

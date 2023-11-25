@@ -9,6 +9,11 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\nesprex-shared\Domain\Domain.csproj" />
+      <ProjectReference Include="..\..\nesprex-shared\Shared.Domain\Shared.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Dtos\" />
     </ItemGroup>
 
 </Project>

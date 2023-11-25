@@ -3,7 +3,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapper", "Mapper\Mapper.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Handler", "Handler\Handler.csproj", "{AE3A10CD-7378-4868-B67F-138A9C6DABF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "..\nesprex-shared\Domain\Domain.csproj", "{E691F663-57DF-415C-A793-4E79295CB50A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Domain", "..\nesprex-shared\Shared.Domain\Shared.Domain.csproj", "{F72C7538-8E2B-45D6-8084-C7635468B6EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,9 +19,9 @@ Global
 		{AE3A10CD-7378-4868-B67F-138A9C6DABF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE3A10CD-7378-4868-B67F-138A9C6DABF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE3A10CD-7378-4868-B67F-138A9C6DABF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E691F663-57DF-415C-A793-4E79295CB50A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E691F663-57DF-415C-A793-4E79295CB50A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E691F663-57DF-415C-A793-4E79295CB50A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E691F663-57DF-415C-A793-4E79295CB50A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F72C7538-8E2B-45D6-8084-C7635468B6EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F72C7538-8E2B-45D6-8084-C7635468B6EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F72C7538-8E2B-45D6-8084-C7635468B6EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F72C7538-8E2B-45D6-8084-C7635468B6EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

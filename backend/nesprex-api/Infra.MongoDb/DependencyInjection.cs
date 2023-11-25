@@ -1,11 +1,9 @@
-﻿using Domain.Repositories;
+﻿using Shared.Domain.Repositories;
 using Infra.MongoDb.Configurations;
-using Infra.MongoDb.Extensions.DependencyInjection;
 using Infra.MongoDb.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
-using MongoDB.Driver;
+using Shared.Extensions.DependencyInjection;
 
 namespace Infra.MongoDb;
 
