@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Internal;
+﻿namespace Domain.Entities;
 
 public record ImageData(
     IEnumerable<string> Folders,

@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.Internal;
+﻿namespace Mapper.Entities.Internal.FilteredRawCategory;
 
 public class FilteredRawCategory
 {

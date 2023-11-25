@@ -1,15 +1,17 @@
-﻿using Domain.Entities.External;
-using Domain.Entities.Internal;
-using Domain.Services;
+﻿using Domain.Entities;
+using Mapper.Services;
 using Handler.Configurations;
+using Mapper.Entities.External.RawData;
+using Mapper.Entities.External.RawData.Mappers;
+using Mapper.Entities.Internal.ImageData;
+using Mapper.Entities.Internal.ImageData.Mappers;
 using Microsoft.Extensions.Options;
-using Technology = Domain.Entities.Internal.Technology;
 
 namespace Handler.Services;
 
 public interface IDataProvider
 {
-    Task<IEnumerable<Technology>> GetTechnologies();
+    Task<IEnumerable<Domain.Entities.Technology>> GetTechnologies();
 
     Task<IEnumerable<ImageData>> GetImagesData();
 }
@@ -33,7 +35,7 @@ public class FileDataProvider : IDataProvider
         _logger = logger;
     }
     
-    public async Task<IEnumerable<Technology>> GetTechnologies()
+    public async Task<IEnumerable<Domain.Entities.Technology>> GetTechnologies()
     {
         return (await GetCachedRawData()).MapRawDataToDomainEntities();
     }

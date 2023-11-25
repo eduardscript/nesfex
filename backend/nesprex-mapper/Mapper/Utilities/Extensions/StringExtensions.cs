@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Domain.Utilities.Extensions;
+namespace Mapper.Utilities.Extensions;
 
 public static class StringExtensions
 {

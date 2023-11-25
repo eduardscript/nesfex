@@ -1,8 +1,12 @@
-﻿namespace Domain.Entities.External;
+﻿using Mapper.Entities.Internal.FilteredRawCategory;
+using Mapper.Entities.Internal.FilteredRawCategory.Mappers;
+
+
+namespace Mapper.Entities.External.RawData.Mappers;
 
 public static class RawDataMapper
 {
-    public static IEnumerable<Internal.Technology> MapRawDataToDomainEntities(this RawData data)
+    public static IEnumerable<Domain.Entities.Technology> MapRawDataToDomainEntities(this RawData data)
     {
         // Extract relevant properties from enabled technologies
         var filteredRawTechnologies = data.EnabledTechnologies
@@ -27,7 +31,7 @@ public static class RawDataMapper
             var mappedCategoriesCapsules = categoriesOfTechnology
                 .MapCategoriesWithCapsules(capsulesOfTechnology, categoryTypes);
 
-            return new Internal.Technology(
+            return new Domain.Entities.Technology(
                 rawTechnology.Name,
                 rawTechnology.Url,
                 mappedCategoriesCapsules);
@@ -36,7 +40,7 @@ public static class RawDataMapper
         return mappedTechnologies;
     }
 
-    private static IEnumerable<Internal.Category> MapCategoriesWithCapsules(
+    private static IEnumerable<Domain.Entities.Category> MapCategoriesWithCapsules(
         this IEnumerable<FilteredRawCategory> categoriesOfCapsules,
         IEnumerable<Product> rawCapsules,
         GroupedFilteredRawCategories categoryTypes)
@@ -52,7 +56,7 @@ public static class RawDataMapper
             var mappedCapsules = capsulesOfCategory.MapCapsules(categoryTypes);
 
             // Map category
-            var mappedCategory = new Internal.Category(
+            var mappedCategory = new Domain.Entities.Category(
                 categoryCapsule.Name,
                 categoryCapsule.Description,
                 categoryCapsule.ImageUrl,
@@ -62,7 +66,7 @@ public static class RawDataMapper
         });
     }
 
-    private static IEnumerable<Internal.Capsule> MapCapsules(
+    private static IEnumerable<Domain.Entities.Capsule> MapCapsules(
         this IEnumerable<Product> capsulesOfCategory,
         GroupedFilteredRawCategories categoryTypes)
     {
@@ -94,7 +98,7 @@ public static class RawDataMapper
                 .Where(rawLabel => rawCapsule.Ranges.Contains(rawLabel.Id))
                 .Select(x => x.Name);
 
-            var mappedInfo = new Internal.Info(
+            var mappedInfo = new Domain.Entities.Info(
                 rawCapsule.Intensity,
                 rawCapsule.Bitterness,
                 rawCapsule.Acidity,
@@ -104,7 +108,7 @@ public static class RawDataMapper
                 cupSizesNames,
                 flavors);
 
-            return new Internal.Capsule(
+            return new Domain.Entities.Capsule(
                 rawCapsule.Name,
                 rawCapsule.Description,
                 rawCapsule.Price,

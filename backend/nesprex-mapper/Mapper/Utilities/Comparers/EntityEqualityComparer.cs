@@ -1,4 +1,4 @@
-﻿namespace Domain.Utilities.Comparers;
+﻿namespace Mapper.Utilities.Comparers;
 
 internal class EntityEqualityComparer<T> : IEqualityComparer<T>
 {

@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 using Confluent.Kafka;
-using Domain.Utilities.Extensions;
+using Mapper.Utilities.Extensions;
 using Handler.Configurations;
 using Microsoft.Extensions.Options;
 

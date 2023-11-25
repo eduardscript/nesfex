@@ -1,4 +1,4 @@
-﻿namespace Domain.Entities.External;
+﻿namespace Mapper.Entities.External.RawData;
 
 public class RawData
 {

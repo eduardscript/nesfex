@@ -1,8 +1,10 @@
 ﻿using System.Text.Json;
-using Domain.Utilities.Comparers;
-using ExternalEntities = Domain.Entities.External;
+using Mapper.Entities.External;
+using Mapper.Entities.External.RawData;
+using Mapper.Utilities.Comparers;
+using ExternalEntities = Mapper.Entities.External;
 
-namespace Domain.Services;
+namespace Mapper.Services;
 
 public class RawDataService
 {
@@ -18,7 +20,7 @@ public class RawDataService
         
         var mergedData = new RawData(
             data1.Categories.Concat(data2.Categories).Distinct(new EntityEqualityComparer<ExternalNespressoCategory>(x => x.Id)).ToList(),
-            data1.EnabledTechnologies.Concat(data2.EnabledTechnologies).Distinct(new EntityEqualityComparer<ExternalEntities.Technology>(x => x.Id!)).ToList(),
+            data1.EnabledTechnologies.Concat(data2.EnabledTechnologies).Distinct(new EntityEqualityComparer<Technology>(x => x.Id!)).ToList(),
             data1.Products.Concat(data2.Products).Distinct(new EntityEqualityComparer<Product>(x => x.Id)).ToList());
 
         return mergedData;
