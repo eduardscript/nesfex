@@ -1,0 +1,19 @@
+{
+  "name": "nesprex-image-downloader",
+  "description": "A image downloader microservice using kafka and nodejs for nesprex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "author": "edscriptdev",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "kafkajs": "^2.2.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "nodemon": "^2.0.7",
+    "@types/node": "^16.0.0"
+  }
+}
