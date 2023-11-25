@@ -3,7 +3,6 @@ using Mapper.Services;
 using Handler.Configurations;
 using Mapper.Entities.External.RawData;
 using Mapper.Entities.External.RawData.Mappers;
-using Mapper.Entities.Internal.ImageData;
 using Mapper.Entities.Internal.ImageData.Mappers;
 using Microsoft.Extensions.Options;
 

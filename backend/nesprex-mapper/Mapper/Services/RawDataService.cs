@@ -1,5 +1,4 @@
 ﻿using System.Text.Json;
-using Mapper.Entities.External;
 using Mapper.Entities.External.RawData;
 using Mapper.Utilities.Comparers;
 using ExternalEntities = Mapper.Entities.External;

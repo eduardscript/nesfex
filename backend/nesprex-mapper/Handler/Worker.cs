@@ -1,8 +1,6 @@
 using Domain.Entities;
-using Mapper.Entities.Internal;
 using Handler.Configurations;
 using Handler.Services;
-using Mapper.Entities.Internal.ImageData;
 using Microsoft.Extensions.Options;
 
 namespace Handler;
