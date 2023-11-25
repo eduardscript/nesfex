@@ -1,5 +1,6 @@
 ﻿using Domain.Repositories;
 using Infra.MongoDb.Configurations;
+using Infra.MongoDb.Extensions.DependencyInjection;
 using Infra.MongoDb.Repositories;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,23 +19,9 @@ public static class DependencyInjection
             .AddOptions<MongoConfiguration>()
             .Bind(configuration.GetSection("Mongo"));
 
-        services.AddSingleton<IMongoClient>(sp =>
-        {
-            var mongoDbSettings = sp.GetRequiredService<IOptions<MongoConfiguration>>();
-
-            return new MongoClient(mongoDbSettings.Value.ConnectionString);
-        });
-
-        services.AddSingleton<IMongoDatabase>(sp =>
-        {
-            var mongoDbSettings = sp.GetRequiredService<IOptions<MongoConfiguration>>();
-
-            var mongoClient = sp.GetRequiredService<IMongoClient>();
-
-            return mongoClient.GetDatabase(mongoDbSettings.Value.DatabaseName);
-        });
-
-        services.AddSingleton<ITechnologyRepository, TechnologyRepository>();
+        services
+            .AddMongo()
+            .AddCollection<ITechnologyRepository, TechnologyRepository>("technologies");
 
         return services;
     }
