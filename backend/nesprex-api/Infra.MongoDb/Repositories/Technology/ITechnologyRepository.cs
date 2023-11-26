@@ -1,7 +1,6 @@
-﻿using Shared.Domain.Entities;
-using Shared.Domain.Repositories.Filters;
+﻿namespace Infra.MongoDb.Repositories.Technology;
 
-namespace Shared.Domain.Repositories;
+using Shared.Domain.Entities;
 
 public interface ITechnologyRepository
 {

@@ -1,4 +1,4 @@
-﻿namespace Shared.Domain.Repositories.Filters;
+﻿namespace Infra.MongoDb.Repositories.Technology;
 
 public class TechnologyFilter
 {

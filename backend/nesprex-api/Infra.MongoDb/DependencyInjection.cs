@@ -1,6 +1,6 @@
-﻿using Shared.Domain.Repositories;
-using Infra.MongoDb.Configurations;
+﻿using Infra.MongoDb.Configurations;
 using Infra.MongoDb.Repositories;
+using Infra.MongoDb.Repositories.Technology;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Shared.Extensions.DependencyInjection;

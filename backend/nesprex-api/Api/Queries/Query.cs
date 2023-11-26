@@ -1,6 +1,5 @@
-﻿using Shared.Domain.Entities;
-using Shared.Domain.Repositories;
-using Shared.Domain.Repositories.Filters;
+﻿using Infra.MongoDb.Repositories.Technology;
+using Shared.Domain.Entities;
 
 namespace Api.Queries;
 
