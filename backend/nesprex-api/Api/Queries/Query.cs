@@ -7,7 +7,7 @@ public class Query
 {
     public Task<IEnumerable<Technology>> GetTechnologiesAsync(
         [Service] ITechnologyRepository technologyRepository,
-        TechnologyFilter filter)
+        TechnologyFilter? filter = null)
     {
         return technologyRepository.GetTechnologiesAsync(filter);
     }

@@ -4,5 +4,5 @@ using Shared.Domain.Entities;
 
 public interface ITechnologyRepository
 {
-    Task<IEnumerable<Technology>> GetTechnologiesAsync(TechnologyFilter filter);
+    Task<IEnumerable<Technology>> GetTechnologiesAsync(TechnologyFilter? filter);
 }

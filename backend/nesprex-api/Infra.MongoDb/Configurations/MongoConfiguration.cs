@@ -1,6 +1,8 @@
-﻿namespace Infra.MongoDb.Configurations;
+﻿using Shared.Extensions.Configurations;
 
-public class MongoConfiguration
+namespace Infra.MongoDb.Configurations;
+
+public class MongoConfiguration : IMongoConfiguration
 {
     public string ConnectionString { get; set; } = default!;
     
