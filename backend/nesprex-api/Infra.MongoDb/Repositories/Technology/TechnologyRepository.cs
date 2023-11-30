@@ -7,47 +7,130 @@ namespace Infra.MongoDb.Repositories.Technology;
 using MongoDB.Driver;
 using Shared.Domain.Entities;
 
-public class TechnologyRepository : ITechnologyRepository
+public class TechnologyRepository(IMongoCollection<Technology> technologyCollection) : ITechnologyRepository
 {
-    private readonly IMongoCollection<Technology> technologyCollection;
-
-    public TechnologyRepository(IMongoCollection<Technology> technologyCollection)
-    {
-        this.technologyCollection = technologyCollection;
-    }
-
     public async Task<IEnumerable<Technology>> GetTechnologiesAsync(TechnologyFilter? filter = null)
     {
         var pipeline = new List<BsonDocument>();
 
-        var matchFilter = Builders<Technology>.Filter.Empty;
-
         if (filter?.TechnologyNames != null && filter.TechnologyNames.Any())
         {
-            matchFilter &= Builders<Technology>.Filter.In(x => x.Name, filter.TechnologyNames);
+            var technologyMatchStage = new BsonDocument("$match",
+                new BsonDocument("Name",
+                    new BsonDocument("$in", new BsonArray(filter.TechnologyNames))
+                )
+            );
+
+            pipeline.Add(technologyMatchStage);
         }
 
         if (filter?.CategoryNames != null && filter.CategoryNames.Any())
         {
-            matchFilter &= Builders<Technology>
-                .Filter
-                .ElemMatch(x => x.Categories, x => filter.CategoryNames.Contains(x.Name));
+            var categoryMatchStage = new BsonDocument("$match",
+                new BsonDocument("Categories.Name",
+                    new BsonDocument("$in", new BsonArray(filter.CategoryNames))
+                )
+            );
+            
+            pipeline.Add(categoryMatchStage);
+
+            var unwindStage = new BsonDocument("$unwind", "$Categories");
+            
+            pipeline.Add(unwindStage);
+
+            var categoryMatchUnwindStage = new BsonDocument("$match",
+                new BsonDocument("Categories.Name",
+                    new BsonDocument("$in", new BsonArray(filter.CategoryNames))
+                )
+            );
+
+            pipeline.Add(categoryMatchUnwindStage);
+
+            var projectStage = new BsonDocument("$project",
+                new BsonDocument
+                {
+                    { "Name", "$Name" },
+                    { "ImageUrl", "$ImageUrl" },
+                    {
+                        "Categories", new BsonArray
+                        {
+                            new BsonDocument
+                            {
+                                { "Name", "$Categories.Name" },
+                                { "Description", "$Categories.Description" },
+                                { "ImageUrl", "$Categories.ImageUrl" },
+                                { "Capsules", "$Categories.Capsules" },
+                            }
+                        }
+                    }
+                }
+            );
+
+            pipeline.Add(projectStage);
+        }
+        
+        if (filter?.CapsuleNames != null && filter.CapsuleNames.Any())
+        {
+            var capsuleMatchStage = new BsonDocument("$match",
+                new BsonDocument("Categories.Capsules.Name",
+                    new BsonDocument("$in", new BsonArray(filter.CapsuleNames))
+                )
+            );
+
+            pipeline.Add(capsuleMatchStage);
+
+            var unwindStage = new BsonDocument("$unwind", "$Categories");
+            pipeline.Add(unwindStage);
+
+            var unwindCapsuleStage = new BsonDocument("$unwind", "$Categories.Capsules");
+            pipeline.Add(unwindCapsuleStage);
+
+            var capsuleMatchUnwindStage = new BsonDocument("$match",
+                new BsonDocument("Categories.Capsules.Name",
+                    new BsonDocument("$in", new BsonArray(filter.CapsuleNames))
+                )
+            );
+            pipeline.Add(capsuleMatchUnwindStage);
+
+            var projectStage = new BsonDocument("$project",
+                new BsonDocument
+                {
+                    { "Name", "$Name" },
+                    { "ImageUrl", "$ImageUrl" },
+                    {
+                        "Categories", new BsonArray
+                        {
+                            new BsonDocument
+                            {
+                                { "Name", "$Categories.Name" },
+                                { "Description", "$Categories.Description" },
+                                { "ImageUrl", "$Categories.ImageUrl" },
+                                {
+                                    "Capsules", new BsonArray
+                                    {
+                                        new BsonDocument
+                                        {
+                                            { "Name", "$Categories.Capsules.Name" },
+                                            { "Description", "$Categories.Capsules.Description" },
+                                            { "Price", "$Categories.Capsules.Price" },
+                                            { "Info", "$Categories.Capsules.Info" },
+                                            { "ImageUrl", "$Categories.Capsules.ImageUrl" },
+                                        }
+                                    }
+                                },
+                            }
+                        }
+                    }
+                }
+            );
+
+            pipeline.Add(projectStage);
         }
 
-        var matchStage = new BsonDocument("$match", new BsonDocument("Categories.Name", "Limited Editions"));
-        var unwindStage = new BsonDocument("$unwind", "$Categories");
-        var secondMatchStage = new BsonDocument("$match", new BsonDocument("Categories.Name", "Limited Editions"));
-        var projectStage = new BsonDocument("$project", new BsonDocument("_id", 0)
-            .Add("category", new BsonDocument("name", "$Categories.Name")));
-
-        pipeline.Add(matchStage);
-        pipeline.Add(unwindStage);
-        pipeline.Add(secondMatchStage);
-        pipeline.Add(projectStage);
-
         var aggregationOptions = new AggregateOptions { AllowDiskUse = true };
+
         var cursor = await technologyCollection.AggregateAsync<Technology>(
-            PipelineDefinition<Technology, Technology>.Create(pipeline),
+            pipeline,
             aggregationOptions
         );
 
