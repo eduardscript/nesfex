@@ -17,7 +17,10 @@ This project aims to create a user-friendly and intuitive system that simplifies
 - 📈 **Drink Analysis**: Offers insightful analytics on the most and least consumed capsules based on time and temperature data.
 
 ### Architecture 🏢
-![Architecture Diagram](media/architecture.png)
+<div style="text-align:center;">
+    <img src="media/architecture_diagram.png" alt="Architecture Diagram" width="700" />
+</div>
+
 
 ## Getting Started 🛠️
 
