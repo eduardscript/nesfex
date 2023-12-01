@@ -5,92 +5,71 @@ namespace Infra.MongoDb.Repositories.Technology;
 using MongoDB.Driver;
 using Shared.Domain.Entities;
 
-public class MatchBuilder
+public class PipelineBuilder
 {
-    private readonly List<BsonDocument> _matchDocument = new();
+    private readonly List<BsonDocument> _pipeline = new();
+    
+    private BsonDocument _groupStage = new("$group",
+        new BsonDocument
+        {
+            { "_id", "$_id" },
+            { "Name", new BsonDocument("$first", "$Name") },
+            { "ImageUrl", new BsonDocument("$first", "$ImageUrl") },
+            { "Categories", new BsonDocument("$push", "$Categories") }
+        }
+    );
 
-    public MatchBuilder AddMatch(string fieldName, IEnumerable<object> filterValues)
+    public PipelineBuilder MatchTechnology(IList<string>? technologyNames)
     {
-        _matchDocument.Add(new BsonDocument("$match",
-            new BsonDocument(fieldName,
-                new BsonDocument("$in", new BsonArray(filterValues))
-            )
-        ));
+        if (technologyNames?.Any() == true)
+        {
+            var technologyMatchStage = new BsonDocument("$match",
+                new BsonDocument("Name",
+                    new BsonDocument("$in", new BsonArray(technologyNames))
+                )
+            );
+            
+            _pipeline.Add(technologyMatchStage);
+        }
 
         return this;
     }
 
-    public List<BsonDocument> Build()
+    public PipelineBuilder MatchCategory(IList<string>? categoryNames)
     {
-        return _matchDocument;
-    }
-}
-
-public class TechnologyRepository(IMongoCollection<Technology> technologyCollection) : ITechnologyRepository
-{
-    public async Task<IEnumerable<Technology>> GetTechnologiesAsync(TechnologyFilter? filter = null)
-    {
-        var pipeline = new List<BsonDocument>();
-
-        if (filter?.TechnologyNames != null && filter.TechnologyNames.Any())
-        {
-            var technologyMatchStage = new BsonDocument("$match",
-                new BsonDocument("Name",
-                    new BsonDocument("$in", new BsonArray(filter.TechnologyNames))
-                )
-            );
-
-            pipeline.Add(technologyMatchStage);
-        }
-
-        if (filter?.CategoryNames != null && filter.CategoryNames.Any())
+        if (categoryNames?.Any() == true)
         {
             var matchCategoryStage = new BsonDocument("$match",
                 new BsonDocument("Categories.Name",
-                    new BsonDocument("$in", new BsonArray(filter.CategoryNames))
+                    new BsonDocument("$in", new BsonArray(categoryNames))
                 )
             );
 
-            pipeline.Add(matchCategoryStage);
+            _pipeline.Add(matchCategoryStage);
 
             var unwindStage = new BsonDocument("$unwind", "$Categories");
-            pipeline.Add(unwindStage);
+            _pipeline.Add(unwindStage);
 
             var matchCategoryUnwindStage = new BsonDocument("$match",
                 new BsonDocument("Categories.Name",
-                    new BsonDocument("$in", new BsonArray(filter.CategoryNames))
+                    new BsonDocument("$in", new BsonArray(categoryNames))
                 )
             );
 
-            pipeline.Add(matchCategoryUnwindStage);
+            _pipeline.Add(matchCategoryUnwindStage);
 
-            var groupStage = new BsonDocument("$group",
-                new BsonDocument
-                {
-                    { "_id", "$_id" },
-                    { "Name", new BsonDocument("$first", "$Name") },
-                    { "ImageUrl", new BsonDocument("$first", "$ImageUrl") },
-                    {
-                        "Categories", new BsonDocument("$push",
-                            new BsonDocument
-                            {
-                                { "Name", "$Categories.Name" },
-                                { "Description", "$Categories.Description" },
-                                { "ImageUrl", "$Categories.ImageUrl" },
-                                { "Capsules", "$Categories.Capsules" }
-                            }
-                        )
-                    }
-                }
-            );
-
-            pipeline.Add(groupStage);
+            _pipeline.Add(_groupStage);
         }
 
-        if (filter?.CapsuleNames != null && filter.CapsuleNames.Any())
+        return this;
+    }
+
+    public PipelineBuilder MatchCapsule(IList<string>? capsuleNames)
+    {
+        if (capsuleNames?.Any() == true)
         {
             var matchStage = new BsonDocument("$match", new BsonDocument("Categories.Capsules.Name",
-                new BsonDocument("$in", new BsonArray(filter.CapsuleNames))));
+                new BsonDocument("$in", new BsonArray(capsuleNames))));
 
             var unwindStage = new BsonDocument("$unwind", "$Categories");
             var unwindCapsuleStage = new BsonDocument("$unwind", "$Categories.Capsules");
@@ -106,7 +85,7 @@ public class TechnologyRepository(IMongoCollection<Technology> technologyCollect
                             "$cond", new BsonArray
                             {
                                 new BsonDocument("$in",
-                                    new BsonArray { "$Categories.Capsules.Name", new BsonArray(filter.CapsuleNames) }),
+                                    new BsonArray { "$Categories.Capsules.Name", new BsonArray(capsuleNames) }),
                                 new BsonDocument
                                 {
                                     { "Name", "$Categories.Name" },
@@ -133,31 +112,49 @@ public class TechnologyRepository(IMongoCollection<Technology> technologyCollect
                 }
             });
 
-            var groupByTechnology = new BsonDocument("$group", new BsonDocument
-            {
-                { "_id", "$_id" },
-                { "Name", new BsonDocument("$first", "$Name") },
-                { "ImageUrl", new BsonDocument("$first", "$ImageUrl") },
-                { "Categories", new BsonDocument("$push", "$Categories") }
-            });
-
-            pipeline.Add(matchStage);
-            pipeline.Add(unwindStage);
-            pipeline.Add(unwindCapsuleStage);
-            pipeline.Add(matchStage);
-            pipeline.Add(projectStage);
-            pipeline.Add(groupByTechnology);
+            _pipeline.Add(matchStage);
+            _pipeline.Add(unwindStage);
+            _pipeline.Add(unwindCapsuleStage);
+            _pipeline.Add(matchStage);
+            _pipeline.Add(projectStage);
+            _pipeline.Add(_groupStage);
         }
+
+        return this;
+    }
+
+    public PipelineBuilder SortByName()
+    {
+        _pipeline.Add(new BsonDocument("$sort", new BsonDocument
+        {
+            { "Name", 1 }
+        }));
+
+        return this;
+    }
+
+    public List<BsonDocument> Build()
+    {
+        return _pipeline;
+    }
+}
+
+public class TechnologyRepository(IMongoCollection<Technology> technologyCollection) : ITechnologyRepository
+{
+    public async Task<IEnumerable<Technology>> GetTechnologiesAsync(TechnologyFilter? filter = null)
+    {
+        var pipelineBuilder = new PipelineBuilder();
+
+        pipelineBuilder
+            .MatchTechnology(filter?.TechnologyNames)
+            .MatchCategory(filter?.CategoryNames)
+            .MatchCapsule(filter?.CapsuleNames)
+            .SortByName();
 
         var aggregationOptions = new AggregateOptions { AllowDiskUse = true };
 
-        pipeline.Add(new BsonDocument("$sort", new BsonDocument
-        {
-            { "Name", 1 } // 1 for ascending order, -1 for descending order
-        }));
-
         var cursor = await technologyCollection.AggregateAsync<Technology>(
-            pipeline,
+            pipelineBuilder.Build(), // Build the pipeline
             aggregationOptions
         );
 
