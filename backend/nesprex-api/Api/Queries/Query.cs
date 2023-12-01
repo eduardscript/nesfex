@@ -11,4 +11,12 @@ public class Query
     {
         return technologyRepository.GetTechnologiesAsync(filter);
     }
+    
+    public class TechnologyType : ObjectType<Technology>
+    {
+        protected override void Configure(IObjectTypeDescriptor<Technology> descriptor)
+        {
+            descriptor.Ignore(t => t.Id);
+        }
+    }
 }

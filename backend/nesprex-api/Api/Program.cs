@@ -5,7 +5,8 @@ var builder = WebApplication.CreateSlimBuilder(args);
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
+    .AddQueryType<Query>()
+    .AddType<Query.TechnologyType>();
 
 builder.Services.AddInfraMongoDb(builder.Configuration);
 
