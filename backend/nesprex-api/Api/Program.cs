@@ -12,6 +12,8 @@ builder.Services.AddInfraMongoDb(builder.Configuration);
 
 var app = builder.Build();
 
+app.MapGet("/ping", () => "pong");
+
 app.MapGraphQL();
 
 app.Run();
