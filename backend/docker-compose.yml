@@ -1,5 +1,14 @@
 version: '3'
 services:
+  api:
+    image: api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports: 
+      - 1007:80
+
   mongo:
     image: mongo
     ports:
