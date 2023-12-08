@@ -10,6 +10,7 @@
 
     <ItemGroup>
       <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.15" />
+      <PackageReference Include="Microsoft.NET.ILLink.Tasks" Version="8.0.100-1.23067.1" />
     </ItemGroup>
 
     <ItemGroup>
