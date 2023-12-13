@@ -1,4 +1,4 @@
-﻿using Infra.MongoDb.Repositories.Technology;
+﻿using Infra.MongoDb.Repositories.UsersTechnology;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Shared.Domain.Entities;
@@ -14,7 +14,7 @@ public static class DependencyInjection
     {
         services
             .AddMongo(configuration)
-            .AddCollection<Technology, ITechnologyRepository, TechnologyRepository>("technologies");
+            .AddCollection<UserTechnology, IUserTechnologiesRepository, UserTechnologiesRepository>("user_technologies");
 
         return services;
     }

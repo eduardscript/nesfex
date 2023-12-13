@@ -1,4 +1,4 @@
-﻿namespace Shared.Extensions.Configurations;
+﻿namespace Shared.Extensions.Mongo.Configurations;
 
 public interface IMongoConfiguration
 {

@@ -1,0 +1,52 @@
+﻿schema {
+  query: Query
+}
+
+type Technology {
+  name: String!
+  imageUrl: String!
+  categories: [Category!]!
+  createdAt: DateTime!
+  updatedAt: DateTime
+}
+
+type Query {
+  technologies(filter: TechnologyFilterInput): [Technology!]!
+}
+
+type Category {
+  name: String!
+  description: String!
+  imageUrl: String!
+  capsules: [Capsule!]!
+}
+
+"The `DateTime` scalar represents an ISO-8601 compliant date time type."
+scalar DateTime
+
+type Capsule {
+  name: String!
+  description: String
+  price: Float!
+  info: Info
+  imageUrl: String!
+}
+
+input TechnologyFilterInput {
+  technologyNames: [String!]
+  categoryNames: [String!]
+  capsuleNames: [String!]
+}
+
+type Info {
+  intensity: Int
+  bitterness: Int
+  acidity: Int
+  roastLevel: Int
+  body: Int
+  labels: [String!]!
+  cupSizes: [String!]
+  aromas: [String!]
+}
+
+directive @tag(name: String!) repeatable on SCHEMA | SCALAR | OBJECT | FIELD_DEFINITION | ARGUMENT_DEFINITION | INTERFACE | UNION | ENUM | ENUM_VALUE | INPUT_OBJECT | INPUT_FIELD_DEFINITION

@@ -1,47 +1,56 @@
-﻿using Api.Entities;
-using Api.Repositories;
+﻿using Api.Mutations.Requests;
+using Api.Mutations.Results;
+using Api.Utilities;
+using Infra.MongoDb.Repositories.UsersTechnology;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Mutations;
 
-public class Mutation(IUserTechnologiesRepository userTechnologiesRepository)
+public class Mutation
 {
-    public async Task<AddedUserTechnology> AddTechnologyWithCapsules(Technology technology)
+    public async Task<AddedTechnology> AddTechnologyWithCapsules(
+        [FromServices] IBackofficeClient backofficeClient,
+        [FromServices] IUserTechnologiesRepository userTechnologiesRepository,
+        UserTechnology technology)
     {
-        await userTechnologiesRepository.AddUserTechnology(technology);
-        
-        await Task.CompletedTask;
-        
-        return new AddedUserTechnology(technology);
-    }
+        var technologiesResult = await backofficeClient
+            .GetTechnologies
+            .ExecuteAsync(new[] { technology.Name });
 
-    public async Task<UpdatedExecuted> AddCapsuleQuantity(string capsuleName, int quantity)
-    {
-        await Task.CompletedTask;
-        
-        return new UpdatedExecuted(capsuleName, quantity);
-    }
-    
-    public async Task<UpdatedExecuted> RemoveCapsuleQuantity(string capsuleName, int quantity)
-    {
-        await Task.CompletedTask;
-        
-        return new UpdatedExecuted(capsuleName, quantity);
-    }
-
-    public class MutationType : InputObjectType<Technology>
-    {
-        protected override void Configure(IInputObjectTypeDescriptor<Technology> descriptor)
+        if (technologiesResult.Data is null)
         {
-            descriptor.Field(f => f.CreatedAt).Ignore();
-
-            base.Configure(descriptor);
+            throw new GraphQLException(Errors.BuildServiceIsDown(Constants.Services.Backoffice));
         }
+        
+        var technologyResult = technologiesResult.Data.Technologies.FirstOrDefault();
+        if (technologyResult is null)
+        {
+            throw new GraphQLException(Errors.BuildMachineNotFound(technology.Name));
+        }
+        
+        var existingCapsules = technologyResult.Categories
+            .SelectMany(tc => tc.Capsules)
+            .Select(c => c.Name)
+            .ToHashSet();
+        
+        var capsulesNotFound = technology.Capsules
+            .Where(c => !existingCapsules.Contains(c.Name))
+            .Select(c => c.Name)
+            .ToList();
+
+        if (capsulesNotFound.Count != 0)
+        {
+            throw new GraphQLException(Errors.BuildCapsulesNotFound(capsulesNotFound, technology.Name));
+        }
+        
+        return new AddedTechnology(technology);
+    }
+
+    public async Task<UpdatedExecuted> UpdateCapsuleQuantity(
+        string capsuleName,
+        QuantityOperation quantityOperation)
+    {
+        return new UpdatedExecuted(capsuleName, quantityOperation.Quantity);
     }
 }
 
-public record AddedUserTechnology(
-    Technology Technology);
-    
-public record UpdatedExecuted(
-    string Name,
-    int Quantity);

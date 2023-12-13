@@ -1,0 +1,21 @@
+﻿{
+  "schema": "schema.graphql",
+  "documents": "**/*.graphql",
+  "extensions": {
+    "strawberryShake": {
+      "name": "BackofficeClient",
+      "url": "http://localhost:5199/graphql",
+      "records": {
+        "inputs": false,
+        "entities": false
+      },
+      "dependencyInjection": true,
+      "transportProfiles": [
+        {
+          "default": "Http",
+          "subscription": "WebSocket"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,18 @@
+
+query GetTechnologies($technologyNames: [String!]) {
+    technologies(filter: {
+        technologyNames: $technologyNames
+    }) {
+        name,
+        categories {
+            name,
+            capsules {
+                name,
+                price,
+                info {
+                    intensity
+                }
+            }
+        }
+    }
+}
