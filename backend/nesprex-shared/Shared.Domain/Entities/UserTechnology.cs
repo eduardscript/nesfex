@@ -1,7 +1,10 @@
 namespace Shared.Domain.Entities;
 
-public record UserTechnology(
+public record UserTechnologies(
     Guid UserId,
+    IEnumerable<UserTechnology> Technologies);
+
+public record UserTechnology(
     string Name,
     IEnumerable<SelectedCapsule> Capsules)
 {

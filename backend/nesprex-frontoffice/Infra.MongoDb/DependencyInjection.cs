@@ -1,6 +1,7 @@
 ﻿using Infra.MongoDb.Repositories.UsersTechnology;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MongoDB.Bson.Serialization.Conventions;
 using Shared.Domain.Entities;
 using Shared.Extensions.Mongo.DependencyInjection;
 
@@ -12,9 +13,12 @@ public static class DependencyInjection
         this IServiceCollection services,
         IConfiguration configuration)
     {
+        var conventionPack = new ConventionPack { new IgnoreExtraElementsConvention(true) };
+        ConventionRegistry.Register("IgnoreExtraElements", conventionPack, type => true);
+        
         services
             .AddMongo(configuration)
-            .AddCollection<UserTechnology, IUserTechnologiesRepository, UserTechnologiesRepository>("user_technologies");
+            .AddCollection<UserTechnologies, IUserTechnologiesRepository, UserTechnologiesRepository>("user_technologies");
 
         return services;
     }

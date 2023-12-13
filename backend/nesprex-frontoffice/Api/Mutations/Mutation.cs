@@ -1,56 +1,100 @@
-﻿using Api.Mutations.Requests;
-using Api.Mutations.Results;
+﻿using Api.Mutations.Results;
 using Api.Utilities;
 using Infra.MongoDb.Repositories.UsersTechnology;
-using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Mutations;
 
-public class Mutation
+public interface ITechnologyClient
 {
-    public async Task<AddedTechnology> AddTechnologyWithCapsules(
-        [FromServices] IBackofficeClient backofficeClient,
-        [FromServices] IUserTechnologiesRepository userTechnologiesRepository,
-        UserTechnology technology)
+    Task<IGetTechnologies_Technologies> GetTechnologies(IReadOnlyList<string> technologyNames);
+}
+
+public class TechnologyClient(IBackofficeClient backofficeClient) : ITechnologyClient
+{
+    public async Task<IGetTechnologies_Technologies> GetTechnologies(IReadOnlyList<string> technologyNames)
     {
         var technologiesResult = await backofficeClient
             .GetTechnologies
-            .ExecuteAsync(new[] { technology.Name });
+            .ExecuteAsync(technologyNames);
 
         if (technologiesResult.Data is null)
         {
             throw new GraphQLException(Errors.BuildServiceIsDown(Constants.Services.Backoffice));
         }
-        
+
         var technologyResult = technologiesResult.Data.Technologies.FirstOrDefault();
         if (technologyResult is null)
         {
-            throw new GraphQLException(Errors.BuildMachineNotFound(technology.Name));
+            throw new GraphQLException(Errors.BuildMachineNotFound(technologyNames));
         }
-        
+
+        return technologyResult;
+    }
+}
+
+public class Mutation
+{
+    public async Task<AddedTechnology> AddTechnologyWithCapsules(
+        [FromServices] IUserTechnologiesRepository userTechnologiesRepository,
+        [FromServices] ITechnologyClient technologyClient,
+        UserTechnologies technology)
+    {
+        var technologyNames = technology.Technologies
+            .Select(t => t.Name)
+            .ToList();
+
+        var technologyResult = await technologyClient
+            .GetTechnologies(technologyNames);
+
         var existingCapsules = technologyResult.Categories
             .SelectMany(tc => tc.Capsules)
             .Select(c => c.Name)
             .ToHashSet();
-        
-        var capsulesNotFound = technology.Capsules
+
+        var capsulesNotFound = technology.Technologies
+            .SelectMany(t => t.Capsules)
             .Where(c => !existingCapsules.Contains(c.Name))
             .Select(c => c.Name)
             .ToList();
 
         if (capsulesNotFound.Count != 0)
         {
-            throw new GraphQLException(Errors.BuildCapsulesNotFound(capsulesNotFound, technology.Name));
+            throw new GraphQLException(Errors.BuildCapsulesNotFound(capsulesNotFound));
         }
-        
+
+        await userTechnologiesRepository.AddUserTechnology(
+            technology);
+
         return new AddedTechnology(technology);
     }
 
     public async Task<UpdatedExecuted> UpdateCapsuleQuantity(
+        [FromServices] IUserTechnologiesRepository userTechnologiesRepository,
+        Guid userId,
+        string technologyName,
         string capsuleName,
-        QuantityOperation quantityOperation)
+        int quantity)
     {
-        return new UpdatedExecuted(capsuleName, quantityOperation.Quantity);
+        var userTechnology = await userTechnologiesRepository
+            .GetUserTechnologies(userId, technologyName);
+
+        var selectedCapsule = userTechnology
+            .Technologies
+            .SelectMany(c => c.Capsules)
+            .SingleOrDefault(c => c.Name == capsuleName);
+
+        if (selectedCapsule is null)
+        {
+            throw new GraphQLException(Errors.BuildCapsulesNotFound(new[] { capsuleName }));
+        }
+
+        selectedCapsule = selectedCapsule with { Quantity = selectedCapsule.Quantity + quantity };
+
+        await userTechnologiesRepository.UpdateCapsuleQuantityByTechnologyName(
+            userId,
+            technologyName,
+            selectedCapsule);
+
+        return new UpdatedExecuted(capsuleName, selectedCapsule.Quantity);
     }
 }
-

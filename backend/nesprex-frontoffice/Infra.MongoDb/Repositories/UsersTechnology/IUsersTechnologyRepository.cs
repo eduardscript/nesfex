@@ -1,19 +1,21 @@
-﻿using MongoDB.Driver;
+﻿using MongoDB.Bson;
+using MongoDB.Driver;
 using Shared.Domain.Entities;
 
 namespace Infra.MongoDb.Repositories.UsersTechnology;
 
 public interface IUserTechnologiesRepository
 {
-    Task<IEnumerable<UserTechnology>> GetUserTechnologies(
-        Guid userId);
+    Task<UserTechnologies> GetUserTechnologies(
+        Guid userId,
+        string? technologyName = null);
 
-    Task AddTechnology(UserTechnology technology);
+    Task AddUserTechnology(UserTechnologies technologies);
 
-    Task UpdateCapsulesByTechnologyName(
+    Task UpdateCapsuleQuantityByTechnologyName(
+        Guid userId,
         string technologyName,
-        IEnumerable<SelectedCapsule> capsules,
-        int quantity);
+        SelectedCapsule capsule);
 
     Task DeleteCapsulesByTechnologyName(
         string technologyName,
@@ -24,42 +26,61 @@ public interface IUserTechnologiesRepository
 
 public class UserTechnologiesRepository : IUserTechnologiesRepository
 {
-    private readonly IMongoCollection<UserTechnology> _technologies;
+    private readonly IMongoCollection<UserTechnologies> _technologies;
 
     public UserTechnologiesRepository(IMongoDatabase database)
     {
-        _technologies = database.GetCollection<UserTechnology>("Technologies");
+        _technologies = database.GetCollection<UserTechnologies>("Technologies");
     }
 
-    public async Task<IEnumerable<UserTechnology>> GetUserTechnologies(Guid userId)
+    public async Task<UserTechnologies> GetUserTechnologies(
+        Guid userId,
+        string? technologyName = null)
     {
-        var filter = Builders<UserTechnology>.Filter.Eq(t => t.UserId, userId);
-        return await _technologies.Find(filter).ToListAsync();
+        var filter = Builders<UserTechnologies>.Filter.And(
+            Builders<UserTechnologies>.Filter.Eq(t => t.UserId, userId));
+
+        if (!string.IsNullOrWhiteSpace(technologyName))
+        {
+            filter &= Builders<UserTechnologies>.Filter.ElemMatch(t => t.Technologies, t => t.Name == technologyName);
+        }
+
+        return await _technologies.Find(filter).SingleAsync();
     }
 
-    public async Task AddTechnology(UserTechnology technology)
+    public async Task AddUserTechnology(UserTechnologies technologies)
     {
-        await _technologies.InsertOneAsync(technology);
+        await _technologies.InsertOneAsync(technologies);
     }
 
-    public async Task UpdateCapsulesByTechnologyName(string technologyName, IEnumerable<SelectedCapsule> capsules,
-        int quantity)
+    public async Task UpdateCapsuleQuantityByTechnologyName(
+        Guid userId,
+        string technologyName,
+        SelectedCapsule capsule)
     {
-        var filter = Builders<UserTechnology>.Filter.Eq(t => t.Name, technologyName);
-        var update = Builders<UserTechnology>.Update.Set(t => t.Capsules, capsules);
-        await _technologies.UpdateOneAsync(filter, update);
+        var filter = Builders<UserTechnologies>.Filter.Eq(t => t.UserId, userId) &
+                     Builders<UserTechnologies>.Filter.ElemMatch(t => t.Technologies, tech => tech.Name == technologyName && tech.Capsules.Any(c => c.Name == capsule.Name));
+
+        var update = Builders<UserTechnologies>.Update.Set("Technologies.$[tech].Capsules.$[cap].Quantity", capsule.Quantity);
+
+        var arrayFilters = new List<ArrayFilterDefinition>
+        {
+            new BsonDocumentArrayFilterDefinition<BsonDocument>(new BsonDocument("tech.Name", technologyName)),
+            new BsonDocumentArrayFilterDefinition<BsonDocument>(new BsonDocument("cap.Name", capsule.Name))
+        };
+
+        var updateOptions = new UpdateOptions { ArrayFilters = arrayFilters };
+
+        await _technologies.UpdateOneAsync(filter, update, updateOptions);
     }
 
     public async Task DeleteCapsulesByTechnologyName(string technologyName, IEnumerable<SelectedCapsule> capsules)
     {
-        var filter = Builders<UserTechnology>.Filter.Eq(t => t.Name, technologyName);
-        var update = Builders<UserTechnology>.Update.PullFilter(t => t.Capsules, c => capsules.Contains(c));
-        await _technologies.UpdateOneAsync(filter, update);
+        throw new NotImplementedException();
     }
 
     public async Task DeleteTechnology(string technologyName)
     {
-        var filter = Builders<UserTechnology>.Filter.Eq(t => t.Name, technologyName);
-        await _technologies.DeleteOneAsync(filter);
+        throw new NotImplementedException();
     }
 }

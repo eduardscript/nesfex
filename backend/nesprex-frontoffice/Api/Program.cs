@@ -1,8 +1,9 @@
-using Api.Configurations;
 using Api.Mutations;
 using Api.Mutations.Types;
 using Api.Queries;
+using Infra.MongoDb;
 using Shared.Extensions.DependantServices.DependencyInjection;
+using Shared.Extensions.Mongo.DependencyInjection;
 
 var builder = WebApplication.CreateSlimBuilder(args);
 
@@ -17,11 +18,10 @@ builder.Services
     .ConfigureHttpClient(client => client.BaseAddress = new Uri("http://localhost:5199/graphql"));
 
 builder.Services
-    .AddDependantServices(builder.Configuration);
+    .AddSingleton<ITechnologyClient, TechnologyClient>();
 
 builder.Services
-    .AddOptions<DependantServicesConfiguration>()
-    .Bind(builder.Configuration.GetSection("DependantServices"));
+    .AddInfraMongoDb(builder.Configuration);
 
 var app = builder.Build();
 

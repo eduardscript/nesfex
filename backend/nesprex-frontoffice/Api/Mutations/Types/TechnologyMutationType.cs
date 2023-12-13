@@ -2,9 +2,9 @@ using Api.Entities;
 
 namespace Api.Mutations.Types;
 
-public class TechnologyMutationType : InputObjectType<Technology>
+public class TechnologyMutationType : InputObjectType<UserTechnology>
 {
-    protected override void Configure(IInputObjectTypeDescriptor<Technology> descriptor)
+    protected override void Configure(IInputObjectTypeDescriptor<UserTechnology> descriptor)
     {
         descriptor.Field(f => f.CreatedAt).Ignore();
 
