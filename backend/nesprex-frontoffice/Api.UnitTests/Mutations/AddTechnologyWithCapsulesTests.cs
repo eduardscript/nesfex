@@ -1,3 +1,5 @@
+using Api.Clients;
+
 namespace Api.UnitTests.Mutations;
 
 public class AddTechnologyWithCapsulesTests : BaseTests

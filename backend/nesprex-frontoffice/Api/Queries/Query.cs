@@ -1,4 +1,5 @@
-﻿using Infra.MongoDb.Repositories.UsersTechnology;
+﻿using HotChocolate.Authorization;
+using Infra.MongoDb.Repositories.UsersTechnology;
 
 namespace Api.Queries;
 
@@ -17,4 +18,18 @@ public class Query
 
         return result;
     }
+    
+    [Authorize(Roles = new[] { "Guest" })]
+    public async Task<TestRe> GetGuest()
+    {
+        return new TestRe("you are a guest");
+    }
+    
+    [Authorize(Roles = new[] { "Admin" })]
+    public async Task<TestRe> GetAdmin()
+    {
+        return new TestRe("you are an awesome ADMIN!!!!!!!!!!!!!!");
+    }
 }
+
+public record TestRe(string Test);

@@ -1,3 +1,4 @@
+using Api.Clients;
 using StrawberryShake;
 
 namespace Api.UnitTests.Clients;

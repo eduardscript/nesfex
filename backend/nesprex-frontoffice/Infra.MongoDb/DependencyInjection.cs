@@ -1,4 +1,5 @@
-﻿using Infra.MongoDb.Repositories.UsersTechnology;
+﻿using Infra.MongoDb.Repositories.Users;
+using Infra.MongoDb.Repositories.UsersTechnology;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Bson.Serialization.Conventions;
@@ -18,7 +19,8 @@ public static class DependencyInjection
         
         services
             .AddMongo(configuration)
-            .AddCollection<UserTechnologies, IUserTechnologiesRepository, UserTechnologiesRepository>("user_technologies");
+            .AddCollection<UserTechnologies, IUserTechnologiesRepository, UserTechnologiesRepository>("user_technologies")
+            .AddCollection<User, IUsersRepository, UsersRepository>("users");
 
         return services;
     }

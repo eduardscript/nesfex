@@ -1,36 +1,9 @@
-﻿using Api.Mutations.Results;
+﻿using Api.Clients;
+using Api.Mutations.Results;
 using Api.Utilities;
 using Infra.MongoDb.Repositories.UsersTechnology;
 
 namespace Api.Mutations;
-
-public interface ITechnologyClient
-{
-    Task<IGetTechnologies_Technologies> GetTechnologies(IReadOnlyList<string> technologyNames);
-}
-
-public class TechnologyClient(IBackofficeClient backofficeClient) : ITechnologyClient
-{
-    public async Task<IGetTechnologies_Technologies> GetTechnologies(IReadOnlyList<string> technologyNames)
-    {
-        var technologiesResult = await backofficeClient
-            .GetTechnologies
-            .ExecuteAsync(technologyNames);
-
-        if (technologiesResult.Data is null)
-        {
-            throw new GraphQLException(Errors.BuildServiceIsDown(Constants.Services.Backoffice));
-        }
-
-        var technologyResult = technologiesResult.Data.Technologies.FirstOrDefault();
-        if (technologyResult is null)
-        {
-            throw new GraphQLException(Errors.BuildMachineNotFound(technologyNames));
-        }
-
-        return technologyResult;
-    }
-}
 
 public class Mutation
 {
@@ -98,3 +71,4 @@ public class Mutation
         return new UpdatedExecuted(capsuleName, selectedCapsule.Quantity);
     }
 }
+

@@ -1,5 +1,3 @@
-using Api.Entities;
-
 namespace Api.Mutations.Types;
 
 public class TechnologyMutationType : InputObjectType<UserTechnology>
