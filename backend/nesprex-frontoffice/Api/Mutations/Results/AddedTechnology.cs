@@ -1,4 +1,3 @@
 namespace Api.Mutations.Results;
 
-public record AddedTechnology(
-    UserTechnologies Technologies);
+public record AddedTechnology(UserTechnologies Technologies);

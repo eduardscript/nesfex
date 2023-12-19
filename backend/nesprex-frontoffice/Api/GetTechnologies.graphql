@@ -1,4 +1,3 @@
-
 query GetTechnologies($technologyNames: [String!]) {
     technologies(filter: {
         technologyNames: $technologyNames

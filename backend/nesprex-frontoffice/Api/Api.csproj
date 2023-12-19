@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -7,24 +7,26 @@
         <InvariantGlobalization>true</InvariantGlobalization>
         <PublishAot>true</PublishAot>
         <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+        <UserSecretsId>d0caa3c2-ac70-444f-8145-a32d580bdc5f</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include="..\.dockerignore">
-        <Link>.dockerignore</Link>
-      </Content>
+        <Content Include="..\.dockerignore">
+            <Link>.dockerignore</Link>
+        </Content>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.15" />
-      <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="14.0.0-p.19" />
-      <PackageReference Include="HotChocolate.Authorization" Version="14.0.0-p.19" />
-      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0" />
-      <PackageReference Include="StrawberryShake.Server" Version="14.0.0-p.16" />
+        <PackageReference Include="HotChocolate.AspNetCore" Version="14.0.0-p.15"/>
+        <PackageReference Include="HotChocolate.AspNetCore.Authorization" Version="14.0.0-p.19"/>
+        <PackageReference Include="HotChocolate.Authorization" Version="14.0.0-p.19"/>
+        <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.0"/>
+        <PackageReference Include="StrawberryShake.Server" Version="14.0.0-p.16"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\Infra.MongoDb\Infra.MongoDb.csproj" />
+        <ProjectReference Include="..\Application\Application.csproj"/>
+        <ProjectReference Include="..\Infra.MongoDb\Infra.MongoDb.csproj"/>
     </ItemGroup>
 
 </Project>

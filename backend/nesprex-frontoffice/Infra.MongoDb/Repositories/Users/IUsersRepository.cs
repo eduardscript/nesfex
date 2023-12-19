@@ -1,60 +1,82 @@
-﻿using MongoDB.Driver;
-using Shared.Domain.Entities;
+﻿namespace Infra.MongoDb.Repositories.Users;
 
-namespace Infra.MongoDb.Repositories.Users;
+using MongoDB.Driver;
+using Shared.Domain.Entities;
 
 public interface IUsersRepository
 {
-    Task<User> GetByUsername(string username);
+	Task<User> GetByUsername(
+		string username);
 
-    Task<User> GetById(Guid userId);
+	Task<User> GetById(
+		Guid userId);
 
-    Task<User> UpsertRefreshToken(Guid userId, RefreshToken refreshToken);
+	Task<User> UpsertRefreshToken(
+		Guid userId,
+		RefreshToken refreshToken);
 
-    Task Insert(User user);
+	Task<User> Insert(
+		User user);
 }
 
 public class UsersRepository(IMongoCollection<User> users) : IUsersRepository
 {
-    public async Task<User> GetByUsername(string username)
-    {
-        var filter = Builders<User>.Filter.Eq("Username", username);
+	public async Task<User> GetByUsername(
+		string username)
+	{
+		var filter = Builders<User>.Filter.Eq(
+			"Username",
+			username);
 
-        var result = await users
-            .Find(filter)
-            .SingleOrDefaultAsync();
+		var result = await users
+							.Find(filter)
+							.SingleOrDefaultAsync();
 
-        return result;
-    }
+		return result;
+	}
 
-    public async Task<User> GetById(Guid userId)
-    {
-        var filter = Builders<User>.Filter.Eq("_id", userId);
+	public async Task<User> GetById(
+		Guid userId)
+	{
+		var filter = Builders<User>.Filter.Eq(
+			"_id",
+			userId);
 
-        var result = await users
-            .Find(filter)
-            .SingleOrDefaultAsync();
+		var result = await users
+							.Find(filter)
+							.SingleOrDefaultAsync();
 
-        return result;
-    }
+		return result;
+	}
 
-    public Task<User> UpsertRefreshToken(Guid userId, RefreshToken refreshToken)
-    {
-        var filter = Builders<User>.Filter.Eq("_id", userId);
-        var update = Builders<User>.Update
-            .Set("RefreshTokens", refreshToken);
+	public Task<User> UpsertRefreshToken(
+		Guid userId,
+		RefreshToken refreshToken)
+	{
+		var filter = Builders<User>.Filter.Eq(
+			"_id",
+			userId);
 
-        var result = users
-            .FindOneAndUpdateAsync(filter, update, new FindOneAndUpdateOptions<User>
-            {
-                IsUpsert = true,
-            });
+		var update = Builders<User>.Update.Set(
+			"RefreshTokens",
+			refreshToken);
 
-        return result;
-    }
+		var result = users.FindOneAndUpdateAsync(
+			filter,
+			update,
+			new FindOneAndUpdateOptions<User>
+			{
+				IsUpsert = true
+			});
 
-    public async Task Insert(User user)
-    {
-        await users.InsertOneAsync(user);
-    }
+		return result;
+	}
+
+	public async Task<User> Insert(
+		User user)
+	{
+		await users.InsertOneAsync(user);
+
+		return user;
+	}
 }

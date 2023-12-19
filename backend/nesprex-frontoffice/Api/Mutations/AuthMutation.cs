@@ -1,45 +1,19 @@
-using Api.Services;
-
 namespace Api.Mutations;
 
-public record LoginInput(
-    string Username,
-    string Password);
-
-public record AuthResult(
-    string Token,
-    string RefreshToken);
+using Application.Features.Authentication;
+using Application.Features.Authentication.Common;
 
 [ExtendObjectType(typeof(Mutation))]
 public class AuthMutation
 {
-    public async Task<AuthResult> Login(
-        [Service] IAuthService authService,
-        LoginInput input)
-    {
-        var user = await authService.Login(input.Username, input.Password);
-        if (user == null)
-        {
-            throw new GraphQLException("Invalid username or password.");
-        }
-        
-        var token = await authService.GenerateJwtToken(user);
+	public Task<AuthResponse> Login(
+		[Service] IMediator mediator,
+		LoginCommand command) => mediator.Send(
+		new LoginCommand(
+			command.Username,
+			command.Password));
 
-        return new AuthResult(token, user.RefreshTokens.Last().Value);
-    }
-
-    public async Task<AuthResult> Register(
-        [Service] IAuthService authService,
-        LoginInput input)
-    {
-        var user = await authService.Register(input.Username, input.Password);
-        if (user == null)
-        {
-            throw new GraphQLException("Invalid username or password.");
-        }
-        
-        var token = await authService.GenerateJwtToken(user);
-
-        return new AuthResult(token, user.RefreshTokens.Last().Value);
-    }
+	public Task<AuthResponse> Register(
+		[Service] IMediator mediator,
+		RegisterCommand command) => mediator.Send(command);
 }
